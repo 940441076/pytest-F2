@@ -1,0 +1,45 @@
+systemInfo:
+  deviceType: 'F2'
+  SWV: 'F2-SWV1.3.2.2'
+  DSA: True
+  K12: True
+  length_speed: {'54mm':['18mm/s', '36mm/s'],
+                '76mm':['18mm/s', '36mm/s']}
+  field_type: ['7mm', '10mm', '14mm']
+  info_text: 4889
+  info_key: '血管内断层成像系统'
+
+
+shouyePage:
+  register:
+    - hosptialID: "1001"
+      patientName: "患者1"
+      age: -1
+      sex: '女'
+      auto_id: "rbtnWoman"
+
+    - hosptialID: "1002"
+      patientName: "患者2"
+      age: 0
+      sex: "女"
+      auto_id: "rbtnWoman"
+
+    - hosptialID: "1003"
+      patientName: "患者3"
+      age: 120
+      sex: "男"
+      auto_id: "rbtnMen"
+
+    - hosptialID: '1004_-Aa~你`!@#$%^&*()=+/（）:;：？?、。，,【】|.\'
+      patientName: '患者4_-Aa~`!@#$%^&*()=+/（）:;：？?、。，,【】|.\'
+      age: 121
+      sex: "男"
+      auto_id: "rbtnMen"
+
+
+settingPage:
+  - list_Vessel: [['RCA Prox'], ['RCA Mid'], ['RCA Distal'], ['PDA'], ['Left Main'], ['LAD Prox'],['LAD Mid'],
+              ['LAD Distal'], ['Diagonal 1'], ['Diagonal 2'], ['LCX Prox'], ['LCX OM1'], ['LCX Mid'],
+              ['LCX OM2'], ['LCX Distal']
+              ]
+    list_Procedure: [['Pre-PCI'], ['Post-PCI'], ['Follow-Up']]

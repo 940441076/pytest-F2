@@ -1,0 +1,1 @@
+allure serve result/temp/

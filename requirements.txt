@@ -1,0 +1,14 @@
+pytest
+pytest-html
+pytest-xdist
+pytest-ordering
+pytest-rerunfailures
+pytest-base-url
+allure-pytest
+requests
+pyyaml
+pytest_yaml_yoyo
+pywinauto
+pillow
+pyautogui
+psutil

@@ -1,0 +1,241 @@
+| Static - '设置'    (L890, T80, R1040, B130)
+   |    | ['设置Static', 'Static', '设置', '设置Static0', '设置Static1', 'Static0', 'Static1', '设置0', '设置1']
+   |    | child_window(title="设置", control_type="Text")
+   |    |    | 
+   |    |    | Static - '设置'    (L895, T94, R931, B116)
+   |    |    | ['设置Static2', 'Static2', '设置2']
+   |    |    | child_window(title="设置", control_type="Text")
+   |    | 
+   |    | Static - '折射率'    (L907, T130, R1153, B155)
+   |    | ['Static3', '折射率', '折射率Static', '折射率0', '折射率1', '折射率Static0', '折射率Static1']
+   |    | child_window(title="折射率", control_type="Text")
+   |    |    | 
+   |    |    | Static - '折射率'    (L912, T135, R948, B150)
+   |    |    | ['Static4', '折射率2', '折射率Static2']
+   |    |    | child_window(title="折射率", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T155, R1153, B180)
+   |    | ['ComboBox', '折射率ComboBox', 'ComboBox0', 'ComboBox1']
+   |    | child_window(auto_id="comMedium", control_type="ComboBox")
+   |    | 
+   |    | Static - '————回放设置————————————————'    (L840, T199, R1220, B233)
+   |    | ['Static5', '————回放设置————————————————', '————回放设置————————————————Static', '————回放设置————————————————0', '————回放设置————————————————1', '————回放设置————————————————Static0', '————回放设置————————————————Static1']
+   |    | child_window(title="————回放设置————————————————", control_type="Text")
+   |    |    | 
+   |    |    | Static - '————回放设置————————————————'    (L845, T204, R1152, B219)
+   |    |    | ['Static6', '————回放设置————————————————2', '————回放设置————————————————Static2']
+   |    |    | child_window(title="————回放设置————————————————", control_type="Text")
+   |    | 
+   |    | Static - '回放类型'    (L907, T233, R1153, B258)
+   |    | ['回放类型Static', 'Static7', '回放类型', '回放类型Static0', '回放类型Static1', '回放类型0', '回放类型1']
+   |    | child_window(title="回放类型", control_type="Text")
+   |    |    | 
+   |    |    | Static - '回放类型'    (L912, T238, R960, B253)
+   |    |    | ['回放类型Static2', 'Static8', '回放类型2']
+   |    |    | child_window(title="回放类型", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T258, R1153, B283)
+   |    | ['回放类型ComboBox', 'ComboBox2', 'ComboBox循环', 'ComboBox20', 'ComboBox21']
+   |    | child_window(auto_id="comLoop", control_type="ComboBox")
+   |    | 
+   |    | Static - '快进步长'    (L907, T302, R1153, B327)
+   |    | ['Static9', '快进步长Static', '快进步长', '快进步长Static0', '快进步长Static1', '快进步长0', '快进步长1']
+   |    | child_window(title="快进步长", control_type="Text")
+   |    |    | 
+   |    |    | Static - '快进步长'    (L912, T307, R960, B322)
+   |    |    | ['Static10', '快进步长Static2', '快进步长2']
+   |    |    | child_window(title="快进步长", control_type="Text")
+   |    | 
+   |    | Custom - ''    (L907, T327, R1153, B355)
+   |    | ['Custom', '快进步长Custom', 'Custom0', 'Custom1']
+   |    | child_window(auto_id="PageStep", control_type="Custom")
+   |    |    | 
+   |    |    | Edit - '5'    (L908, T328, R1132, B354)
+   |    |    | ['快进步长Edit', 'Edit', 'Edit0', 'Edit1']
+   |    |    | child_window(title="5", auto_id="txtNum", control_type="Edit")
+   |    |    |    | 
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar', 'ScrollBar0', 'ScrollBar1']
+   |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    | 
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar2']
+   |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    | 
+   |    |    | Button - ''    (L1132, T330, R1152, B341)
+   |    |    | ['Button2', '查看Button', '查看Button0', '查看Button1']
+   |    |    | child_window(auto_id="btnUp", control_type="Button")
+   |    |    |    | 
+   |    |    |    | Image - ''    (L1138, T331, R1147, B340)
+   |    |    |    | ['Image3', '查看Image', '查看Image0', '查看Image1']
+   |    |    | 
+   |    |    | Button - ''    (L1132, T342, R1152, B353)
+   |    |    | ['Button3', '查看Button2']
+   |    |    | child_window(auto_id="btnDown", control_type="Button")
+   |    |    |    | 
+   |    |    |    | Image - ''    (L1138, T343, R1147, B352)
+   |    |    |    | ['Image4', '查看Image2']
+   |    | 
+   |    | Static - '回放速度:'    (L907, T371, R968, B396)
+   |    | ['Static11', '回放速度:Static', '回放速度:', '回放速度:Static0', '回放速度:Static1', '回放速度:0', '回放速度:1']
+   |    | child_window(title="回放速度:", control_type="Text")
+   |    |    | 
+   |    |    | Static - '回放速度:'    (L912, T376, R963, B391)
+   |    |    | ['Static12', '回放速度:Static2', '回放速度:2']
+   |    |    | child_window(title="回放速度:", control_type="Text")
+   |    | 
+   |    | Static - '4'    (L968, T371, R986, B396)
+   |    | ['Static13', '4', '4Static', '40', '41', '4Static0', '4Static1', '400', '401']
+   |    | child_window(title="4", control_type="Text")
+   |    |    | 
+   |    |    | Static - '4'    (L973, T376, R981, B391)
+   |    |    | ['Static14', '42', '4Static2']
+   |    |    | child_window(title="4", control_type="Text")
+   |    | 
+   |    | Slider - ''    (L907, T396, R1153, B414)
+   |    | ['回放速度:Slider', 'Slider', '4Slider', 'Slider0', 'Slider1']
+   |    | child_window(auto_id="playbackSpeed", control_type="Slider")
+   |    |    | 
+   |    |    | Thumb - ''    (L985, T396, R996, B414)
+   |    |    | ['4Thumb', 'Thumb', 'Thumb0', 'Thumb1']
+   |    |    | child_window(auto_id="Thumb", control_type="Thumb")
+   |    | 
+   |    | Static - '————回撤设置————————————————'    (L840, T440, R1220, B474)
+   |    | ['Static15', '————回撤设置————————————————', '————回撤设置————————————————Static', '————回撤设置————————————————0', '————回撤设置————————————————1', '————回撤设置————————————————Static0', '————回撤设置————————————————Static1']
+   |    | child_window(title="————回撤设置————————————————", auto_id="rotateDes", control_type="Text")
+   |    |    | 
+   |    |    | Static - '————回撤设置————————————————'    (L845, T445, R1152, B460)
+   |    |    | ['Static16', '————回撤设置————————————————2', '————回撤设置————————————————Static2']
+   |    |    | child_window(title="————回撤设置————————————————", control_type="Text")
+   |    | 
+   |    | RadioButton - '6k转'    (L917, T474, R962, B488)
+   |    | ['6k转RadioButton', 'RadioButton', '6k转', '6k转0', '6k转1', 'RadioButton0', 'RadioButton1']
+   |    | child_window(title="6k转", auto_id="rbRotateSpeed6000", control_type="RadioButton")
+   |    |    | 
+   |    |    | Static - '6k转'    (L936, T473, R962, B488)
+   |    |    | ['Static17', '6k转Static', '6k转2']
+   |    |    | child_window(title="6k转", control_type="Text")
+   |    | 
+   |    | RadioButton - '12k转'    (L972, T474, R1023, B488)
+   |    | ['12k转', '12k转RadioButton', 'RadioButton2', '12k转0', '12k转1']
+   |    | child_window(title="12k转", auto_id="rbRotateSpeed12000", control_type="RadioButton")
+   |    |    | 
+   |    |    | Static - '12k转'    (L991, T473, R1023, B488)
+   |    |    | ['12k转2', 'Static18', '12k转Static']
+   |    |    | child_window(title="12k转", control_type="Text")
+   |    | 
+   |    | Static - '回撤距离'    (L907, T488, R1153, B514)
+   |    | ['回撤距离Static', 'Static19', '回撤距离', '回撤距离Static0', '回撤距离Static1', '回撤距离0', '回撤距离1']
+   |    | child_window(title="回撤距离", control_type="Text")
+   |    |    | 
+   |    |    | Static - '回撤距离'    (L912, T493, R960, B509)
+   |    |    | ['回撤距离Static2', 'Static20', '回撤距离2']
+   |    |    | child_window(title="回撤距离", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T514, R1153, B539)
+   |    | ['回撤距离ComboBox', 'ComboBox3', 'ComboBoxF_2.Models.SettingModel', 'ComboBoxF_2.Models.SettingModel0', 'ComboBoxF_2.Models.SettingModel1', 'ComboBox30', 'ComboBox31']
+   |    | child_window(auto_id="comPullback", control_type="ComboBox")
+   |    | 
+   |    | Static - '回撤速度'    (L907, T539, R1153, B564)
+   |    | ['Static21', '回撤速度', '回撤速度Static', '回撤速度0', '回撤速度1', '回撤速度Static0', '回撤速度Static1']
+   |    | child_window(title="回撤速度", control_type="Text")
+   |    |    | 
+   |    |    | Static - '回撤速度'    (L912, T544, R960, B559)
+   |    |    | ['Static22', '回撤速度2', '回撤速度Static2']
+   |    |    | child_window(title="回撤速度", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T564, R1153, B589)
+   |    | ['ComboBox4', '回撤速度ComboBox', 'ComboBoxF_2.Models.SettingModel2']
+   |    | child_window(auto_id="comPullBackSped", control_type="ComboBox")
+   |    | 
+   |    | Static - '回撤类型'    (L907, T589, R1153, B614)
+   |    | ['Static23', '回撤类型', '回撤类型Static', '回撤类型0', '回撤类型1', '回撤类型Static0', '回撤类型Static1']
+   |    | child_window(title="回撤类型", control_type="Text")
+   |    |    | 
+   |    |    | Static - '回撤类型'    (L912, T594, R960, B609)
+   |    |    | ['Static24', '回撤类型2', '回撤类型Static2']
+   |    |    | child_window(title="回撤类型", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T614, R1153, B639)
+   |    | ['回撤类型ComboBox', 'ComboBox5', 'ComboBox手动']
+   |    | child_window(auto_id="comTriggers", control_type="ComboBox")
+   |    | 
+   |    | Static - '————显示设置————————————————'    (L840, T658, R1220, B692)
+   |    | ['Static25', '————显示设置————————————————Static', '————显示设置————————————————', '————显示设置————————————————Static0', '————显示设置————————————————Static1', '————显示设置————————————————0', '————显示设置————————————————1']
+   |    | child_window(title="————显示设置————————————————", control_type="Text")
+   |    |    | 
+   |    |    | Static - '————显示设置————————————————'    (L845, T663, R1152, B678)
+   |    |    | ['Static26', '————显示设置————————————————Static2', '————显示设置————————————————2']
+   |    |    | child_window(title="————显示设置————————————————", control_type="Text")
+   |    | 
+   |    | Static - '风格'    (L907, T692, R1153, B717)
+   |    | ['Static27', '风格Static', '风格', '风格Static0', '风格Static1', '风格0', '风格1']
+   |    | child_window(title="风格", control_type="Text")
+   |    |    | 
+   |    |    | Static - '风格'    (L912, T697, R936, B712)
+   |    |    | ['Static28', '风格Static2', '风格2']
+   |    |    | child_window(title="风格", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T717, R1153, B742)
+   |    | ['ComboBox锐利', 'ComboBox暗黑', 'ComboBox高亮', 'ComboBox6', 'ComboBox自定义', '风格ComboBox']
+   |    | child_window(auto_id="comWindowType", control_type="ComboBox")
+   |    | 
+   |    | Static - '窗宽:'    (L0, T0, R0, B0)
+   |    | ['Static29', '窗宽:', '窗宽:Static']
+   |    | child_window(title="窗宽:", control_type="Text")
+   |    | 
+   |    | Static - '150'    (L0, T0, R0, B0)
+   |    | ['Static30', '150Static', '150']
+   |    | child_window(title="150", control_type="Text")
+   |    | 
+   |    | Button - '初始化'    (L0, T0, R0, B0)
+   |    | ['初始化', 'Button4', '初始化Button', '初始化0', '初始化1', '初始化Button0', '初始化Button1']
+   |    | child_window(title="初始化", auto_id="btnWWReset", control_type="Button")
+   |    | 
+   |    | Slider - ''    (L0, T0, R0, B0)
+   |    | ['Slider2']
+   |    | child_window(auto_id="slider", control_type="Slider")
+   |    | 
+   |    | Static - '窗位:'    (L0, T0, R0, B0)
+   |    | ['窗位:', 'Static31', '窗位:Static']
+   |    | child_window(title="窗位:", control_type="Text")
+   |    | 
+   |    | Static - '50'    (L0, T0, R0, B0)
+   |    | ['50', 'Static32', '50Static', '500', '501', '50Static0', '50Static1']
+   |    | child_window(title="50", control_type="Text")
+   |    | 
+   |    | Button - '初始化'    (L0, T0, R0, B0)
+   |    | ['初始化2', 'Button5', '初始化Button2']
+   |    | child_window(title="初始化", auto_id="btnWLReset", control_type="Button")
+   |    | 
+   |    | Slider - ''    (L0, T0, R0, B0)
+   |    | ['Slider3']
+   |    | child_window(auto_id="slider1", control_type="Slider")
+   |    | 
+   |    | Static - '范围'    (L907, T761, R1153, B786)
+   |    | ['范围', 'Static33', '范围Static', '范围0', '范围1', '范围Static0', '范围Static1']
+   |    | child_window(title="范围", control_type="Text")
+   |    |    | 
+   |    |    | Static - '范围'    (L912, T766, R936, B781)
+   |    |    | ['范围2', 'Static34', '范围Static2']
+   |    |    | child_window(title="范围", control_type="Text")
+   |    | 
+   |    | ComboBox - ''    (L907, T786, R1153, B811)
+   |    | ['ComboBox14mm', '范围ComboBox', 'ComboBox7', 'ComboBox10mm']
+   |    | child_window(auto_id="comField", control_type="ComboBox")
+   |    | 
+   |    | CheckBox - '原位扫描'    (L910, T842, R986, B859)
+   |    | ['原位扫描CheckBox', 'CheckBox', '原位扫描', '原位扫描0', '原位扫描1', 'CheckBox0', 'CheckBox1']
+   |    | child_window(title="原位扫描", auto_id="ckbLocalScan", control_type="CheckBox")
+   |    |    | 
+   |    |    | Static - '原位扫描'    (L930, T841, R986, B859)
+   |    |    | ['Static35', '原位扫描Static', '原位扫描2']
+   |    |    | child_window(title="原位扫描", control_type="Text")
+   |    | 
+   |    | CheckBox - '隐藏提示信息'    (L910, T880, R1014, B897)
+   |    | ['CheckBox2', '隐藏提示信息', '隐藏提示信息CheckBox', '隐藏提示信息0', '隐藏提示信息1']
+   |    | child_window(title="隐藏提示信息", auto_id="ckbHideTip", control_type="CheckBox")
+   |    |    | 
+   |    |    | Static - '隐藏提示信息'    (L930, T879, R1014, B897)
+   |    |    | ['隐藏提示信息Static', 'Static36', '隐藏提示信息2']
+   |    |    | child_window(title="隐藏提示信息", control_type="Text")

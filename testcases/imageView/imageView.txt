@@ -1,0 +1,1943 @@
+"C:\Program Files\Python311\python.exe" D:\workspace\pycharm\myPytest\run.py
+============================= test session starts =============================
+platform win32 -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0 -- C:\Program Files\Python311\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.11.3', 'Platform': 'Windows-10-10.0.19042-SP0', 'Packages': {'pytest': '7.3.1', 'pluggy': '1.0.0'}, 'Plugins': {'allure-pytest': '2.13.2', 'Faker': '18.10.1', 'base-url': '2.0.0', 'html': '3.2.0', 'metadata': '3.0.0', 'ordering': '0.6', 'rerunfailures': '11.1.2', 'xdist': '3.3.1', 'yaml-yoyo': '1.2.4'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17'}
+rootdir: D:\workspace\pycharm\myPytest
+configfile: pytest.ini
+testpaths: ./testcases
+plugins: allure-pytest-2.13.2, Faker-18.10.1, base-url-2.0.0, html-3.2.0, metadata-3.0.0, ordering-0.6, rerunfailures-11.1.2, xdist-3.3.1, yaml-yoyo-1.2.4
+collecting ... collected 52 items / 51 deselected / 1 selected
+
+testcases/imageView/test_imageView.py::Test_ImageViewPage::test_ Control Identifiers:
+
+Dialog - '血管内断层成像系统'    (L0, T0, R1280, B1024)
+['Dialog', '血管内断层成像系统', '血管内断层成像系统Dialog', 'Dialog0', 'Dialog1']
+child_window(title="血管内断层成像系统", control_type="Window")
+   |
+   | Dialog - ''    (L0, T0, R1280, B1024)
+   | ['Dialog2', '患者信息Dialog']
+   |    |
+   |    | Custom - ''    (L0, T0, R1280, B55)
+   |    | ['Custom', 'Custom0', 'Custom1']
+   |    |    |
+   |    |    | Button - ''    (L1236, T28, R1252, B44)
+   |    |    | ['Button', 'Button0', 'Button1']
+   |    |    | child_window(auto_id="imgClose", control_type="Button")
+   |    |    |    |
+   |    |    |    | Image - ''    (L1236, T28, R1252, B44)
+   |    |    |    | ['Image', 'Image0', 'Image1']
+   |    |
+   |    | Button - ''    (L1194, T30, R1210, B46)
+   |    | ['Button2']
+   |    | child_window(auto_id="btnSetting", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1194, T30, R1210, B46)
+   |    |    | ['Image2']
+   |    |
+   |    | Custom - ''    (L0, T135, R1280, B769)
+   |    | ['2022-05-11 12:12:38Custom', 'Custom2']
+   |    | child_window(auto_id="imageMainOper", control_type="Custom")
+   |    |    |
+   |    |    | Custom - ''    (L0, T0, R0, B0)
+   |    |    | ['Custom3']
+   |    |    | child_window(auto_id="histogramControl", control_type="Custom")
+   |    |    |
+   |    |    | Static - '当前帧数: 174'    (L861, T140, R937, B155)
+   |    |    | ['当前帧数: 174', 'Static', '当前帧数: 174Static', 'Static0', 'Static1']
+   |    |    | child_window(title="当前帧数: 174", auto_id="txtIndex", control_type="Text")
+   |    |    |
+   |    |    | Static - '2022-05-11 12:40:27'    (L323, T140, R451, B165)
+   |    |    | ['2022-05-11 12:40:27', '2022-05-11 12:40:27Static', 'Static2', '2022-05-11 12:40:270', '2022-05-11 12:40:271', '2022-05-11 12:40:27Static0', '2022-05-11 12:40:27Static1']
+   |    |    | child_window(title="2022-05-11 12:40:27", auto_id="lbTime", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '2022-05-11 12:40:27'    (L328, T145, R446, B160)
+   |    |    |    | ['2022-05-11 12:40:272', '2022-05-11 12:40:27Static2', 'Static3']
+   |    |    |    | child_window(title="2022-05-11 12:40:27", control_type="Text")
+   |    |    |
+   |    |    | Static - 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm'    (L323, T175, R454, B200)
+   |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic', 'Static4', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm0', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm1', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic0', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic1']
+   |    |    | child_window(title="Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm", auto_id="lbLumenArea", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm'    (L328, T180, R449, B241)
+   |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm2', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic2', 'Static5']
+   |    |    |    | child_window(title="Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm", control_type="Text")
+   |    |    |
+   |    |    | ScrollBar - ''    (L879, T724, R942, B759)
+   |    |    | ['ScrollBar', '1mmScrollBar', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmScrollBar', 'ScrollBar0', 'ScrollBar1']
+   |    |    | child_window(auto_id="tbRuler", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Static - '1mm'    (L893, T724, R928, B751)
+   |    |    |    | ['Static6', '1mmStatic', '1mm', '1mmStatic0', '1mmStatic1', '1mm0', '1mm1']
+   |    |    |    | child_window(title="1mm", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '1mm'    (L898, T729, R923, B742)
+   |    |    |    |    | ['Static7', '1mmStatic2', '1mm2']
+   |    |    |    |    | child_window(title="1mm", control_type="Text")
+   |    |    |
+   |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    | ['Static8']
+   |    |    | child_window(auto_id="desLumen", control_type="Text")
+   |    |    |
+   |    |    | Thumb - ''    (L323, T447, R957, B457)
+   |    |    | ['Thumb', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmThumb', 'Thumb0', 'Thumb1']
+   |    |    | child_window(auto_id="thumb", control_type="Thumb")
+   |    |
+   |    | Button - '校准'    (L16, T963, R96, B995)
+   |    | ['校准', 'Button3', '校准Button', '校准0', '校准1', '校准Button0', '校准Button1']
+   |    | child_window(title="校准", auto_id="btnResetShrink", control_type="Button")
+   |    |    |
+   |    |    | Static - '校准'    (L35, T964, R77, B994)
+   |    |    | ['校准2', '校准Static', 'Static9', '校准Static0', '校准Static1']
+   |    |    | child_window(title="校准", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '校准'    (L40, T969, R72, B989)
+   |    |    |    | ['校准3', '校准Static2', 'Static10']
+   |    |    |    | child_window(title="校准", control_type="Text")
+   |    |
+   |    | Static - '0'    (L101, T970, R136, B988)
+   |    | ['0Static', '0', 'Static11', '0Static0', '0Static1', '00', '01']
+   |    | child_window(title="0", auto_id="lbShrinkRatio", control_type="Text")
+   |    |    |
+   |    |    | Static - '0'    (L101, T970, R109, B988)
+   |    |    | ['0Static2', '02', 'Static12']
+   |    |    | child_window(title="0", control_type="Text")
+   |    |
+   |    | ComboBox - ''    (L150, T962, R270, B997)
+   |    | ['ComboBoxRCA Mid', 'ComboBoxLCX Prox', 'ComboBoxLAD Distal', 'ComboBoxLCX OM1', 'ComboBoxOther', 'ComboBoxLAD Prox', 'ComboBoxLCX Distal', 'ComboBoxLAD Mid', 'ComboBoxLeft Main', '0ComboBox', 'ComboBox', 'ComboBoxLCX Mid', 'ComboBoxDiagonal 2', 'ComboBoxPDA', 'ComboBoxRCA Distal', 'ComboBoxLCX OM2', 'ComboBoxDiagonal 1', 'ComboBoxRCA Prox', 'ComboBox0', 'ComboBox1', 'ComboBoxOther0', 'ComboBoxOther1', 'ComboBox10', 'ComboBox11']
+   |    | child_window(auto_id="cmbVessel", control_type="ComboBox")
+   |    |    |
+   |    |    | Edit - ''    (L152, T970, R240, B988)
+   |    |    | ['Edit', '0Edit', 'Edit0', 'Edit1']
+   |    |    | child_window(auto_id="PART_EditableTextBox", control_type="Edit")
+   |    |    |    |
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar2']
+   |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar3']
+   |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | ListItem - 'Not Selected'    (L0, T0, R0, B0)
+   |    |    | ['ListItem', 'Not Selected', 'Not SelectedListItem', 'ListItem0', 'ListItem1', 'Not Selected0', 'Not Selected1', 'Not SelectedListItem0', 'Not SelectedListItem1']
+   |    |    | child_window(title="Not Selected", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'RCA Prox'    (L0, T0, R0, B0)
+   |    |    | ['ListItem2', 'RCA ProxListItem', 'RCA Prox']
+   |    |    | child_window(title="RCA Prox", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'RCA Mid'    (L0, T0, R0, B0)
+   |    |    | ['ListItem3', 'RCA MidListItem', 'RCA Mid']
+   |    |    | child_window(title="RCA Mid", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'RCA Distal'    (L0, T0, R0, B0)
+   |    |    | ['ListItem4', 'RCA DistalListItem', 'RCA Distal']
+   |    |    | child_window(title="RCA Distal", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'PDA'    (L0, T0, R0, B0)
+   |    |    | ['ListItem5', 'PDAListItem', 'PDA']
+   |    |    | child_window(title="PDA", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Left Main'    (L0, T0, R0, B0)
+   |    |    | ['ListItem6', 'Left MainListItem', 'Left Main']
+   |    |    | child_window(title="Left Main", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LAD Prox'    (L0, T0, R0, B0)
+   |    |    | ['ListItem7', 'LAD Prox', 'LAD ProxListItem']
+   |    |    | child_window(title="LAD Prox", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LAD Mid'    (L0, T0, R0, B0)
+   |    |    | ['ListItem8', 'LAD Mid', 'LAD MidListItem']
+   |    |    | child_window(title="LAD Mid", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LAD Distal'    (L0, T0, R0, B0)
+   |    |    | ['ListItem9', 'LAD DistalListItem', 'LAD Distal']
+   |    |    | child_window(title="LAD Distal", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Diagonal 1'    (L0, T0, R0, B0)
+   |    |    | ['ListItem10', 'Diagonal 1', 'Diagonal 1ListItem']
+   |    |    | child_window(title="Diagonal 1", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Diagonal 2'    (L0, T0, R0, B0)
+   |    |    | ['ListItem11', 'Diagonal 2', 'Diagonal 2ListItem']
+   |    |    | child_window(title="Diagonal 2", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LCX Prox'    (L0, T0, R0, B0)
+   |    |    | ['ListItem12', 'LCX Prox', 'LCX ProxListItem']
+   |    |    | child_window(title="LCX Prox", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LCX OM1'    (L0, T0, R0, B0)
+   |    |    | ['ListItem13', 'LCX OM1ListItem', 'LCX OM1']
+   |    |    | child_window(title="LCX OM1", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LCX Mid'    (L0, T0, R0, B0)
+   |    |    | ['ListItem14', 'LCX MidListItem', 'LCX Mid']
+   |    |    | child_window(title="LCX Mid", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LCX OM2'    (L0, T0, R0, B0)
+   |    |    | ['ListItem15', 'LCX OM2ListItem', 'LCX OM2']
+   |    |    | child_window(title="LCX OM2", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'LCX Distal'    (L0, T0, R0, B0)
+   |    |    | ['ListItem16', 'LCX DistalListItem', 'LCX Distal']
+   |    |    | child_window(title="LCX Distal", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Other'    (L0, T0, R0, B0)
+   |    |    | ['ListItem17', 'Other', 'OtherListItem', 'Other0', 'Other1', 'OtherListItem0', 'OtherListItem1']
+   |    |    | child_window(title="Other", control_type="ListItem")
+   |    |
+   |    | ComboBox - ''    (L280, T962, R400, B997)
+   |    | ['ComboBox2', 'ComboBoxPre-PCI', 'ComboBoxPost-PCI', 'ComboBoxOther2', '新建OCTComboBox', 'ComboBoxFollow-Up', 'ComboBox20', 'ComboBox21']
+   |    | child_window(auto_id="cmbProcedure", control_type="ComboBox")
+   |    |    |
+   |    |    | Edit - ''    (L282, T970, R370, B988)
+   |    |    | ['Edit2', '新建OCTEdit']
+   |    |    | child_window(auto_id="PART_EditableTextBox", control_type="Edit")
+   |    |    |    |
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar4']
+   |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    | ['ScrollBar5']
+   |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | ListItem - 'Not Selected'    (L0, T0, R0, B0)
+   |    |    | ['ListItem18', 'Not Selected2', 'Not SelectedListItem2']
+   |    |    | child_window(title="Not Selected", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Pre-PCI'    (L0, T0, R0, B0)
+   |    |    | ['ListItem19', 'Pre-PCI', 'Pre-PCIListItem']
+   |    |    | child_window(title="Pre-PCI", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Post-PCI'    (L0, T0, R0, B0)
+   |    |    | ['ListItem20', 'Post-PCIListItem', 'Post-PCI']
+   |    |    | child_window(title="Post-PCI", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Follow-Up'    (L0, T0, R0, B0)
+   |    |    | ['ListItem21', 'Follow-Up', 'Follow-UpListItem']
+   |    |    | child_window(title="Follow-Up", control_type="ListItem")
+   |    |    |
+   |    |    | ListItem - 'Other'    (L0, T0, R0, B0)
+   |    |    | ['ListItem22', 'Other2', 'OtherListItem2']
+   |    |    | child_window(title="Other", control_type="ListItem")
+   |    |
+   |    | Button - ''    (L1112, T959, R1245, B999)
+   |    | ['Button4', '结束查看Button', '结束查看Button0', '结束查看Button1']
+   |    | child_window(auto_id="addOCT", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1129, T969, R1154, B989)
+   |    |    | ['结束查看Image', 'Image3']
+   |    |    |
+   |    |    | Static - '新建OCT'    (L1154, T964, R1228, B994)
+   |    |    | ['新建OCT', '新建OCTStatic', 'Static13', '新建OCT0', '新建OCT1', '新建OCTStatic0', '新建OCTStatic1']
+   |    |    | child_window(title="新建OCT", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '新建OCT'    (L1159, T969, R1223, B989)
+   |    |    |    | ['新建OCT2', '新建OCTStatic2', 'Static14']
+   |    |    |    | child_window(title="新建OCT", control_type="Text")
+   |    |
+   |    | Button - ''    (L970, T957, R1102, B1001)
+   |    | ['Button5', '结束查看Button2']
+   |    | child_window(auto_id="close", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L988, T968, R1011, B991)
+   |    |    | ['40Image', 'Image4', '40Image0', '40Image1']
+   |    |    |
+   |    |    | Static - '结束查看'    (L1011, T964, R1085, B994)
+   |    |    | ['结束查看', '结束查看Static', 'Static15', '结束查看0', '结束查看1', '结束查看Static0', '结束查看Static1']
+   |    |    | child_window(title="结束查看", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '结束查看'    (L1016, T969, R1080, B989)
+   |    |    |    | ['结束查看2', '结束查看Static2', 'Static16']
+   |    |    |    | child_window(title="结束查看", control_type="Text")
+   |    |
+   |    | Button - ''    (L828, T957, R960, B1001)
+   |    | ['Button6', '40Button', '40Button0', '40Button1']
+   |    | child_window(auto_id="qrCode", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L854, T968, R877, B991)
+   |    |    | ['30Image', 'Image5', '30Image0', '30Image1']
+   |    |    |
+   |    |    | Static - '二维码'    (L877, T964, R935, B994)
+   |    |    | ['二维码', '二维码Static', 'Static17', '二维码0', '二维码1', '二维码Static0', '二维码Static1']
+   |    |    | child_window(title="二维码", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '二维码'    (L882, T969, R930, B989)
+   |    |    |    | ['二维码2', '二维码Static2', 'Static18']
+   |    |    |    | child_window(title="二维码", control_type="Text")
+   |    |
+   |    | Button - ''    (L503, T950, R593, B1008)
+   |    | ['Button7', '20Button', '20Button0', '20Button1']
+   |    | child_window(auto_id="leftBtn", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L538, T970, R558, B988)
+   |    |    | ['Image6', '20Image', '20Image0', '20Image1']
+   |    |
+   |    | Button - ''    (L594, T950, R684, B1008)
+   |    | ['Button8', '查看Button', '查看Button0', '查看Button1']
+   |    | child_window(auto_id="playBtn", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L630, T969, R648, B989)
+   |    |    | ['查看Image', 'Image7', '查看Image0', '查看Image1']
+   |    |    | child_window(auto_id="img", control_type="Image")
+   |    |
+   |    | Button - ''    (L685, T950, R775, B1008)
+   |    | ['Button9', '30Button']
+   |    | child_window(auto_id="rightBtn", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L720, T970, R740, B988)
+   |    |    | ['30Image2', 'Image8']
+   |    |
+   |    | Custom - ''    (L0, T0, R0, B0)
+   |    | ['Custom4']
+   |    | child_window(auto_id="rendWindow", control_type="Custom")
+   |    |    |
+   |    |    | CheckBox - '位置'    (L85, T135, R137, B155)
+   |    |    | ['CheckBox', '位置CheckBox', '位置', '位置0', '位置1', 'CheckBox0', 'CheckBox1']
+   |    |    | child_window(title="位置", auto_id="ckbShowPos", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image9']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '位置'    (L103, T135, R137, B155)
+   |    |    |    | ['位置Static', 'Static19', '位置2', '位置Static0', '位置Static1']
+   |    |    |    | child_window(title="位置", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '位置'    (L105, T135, R137, B155)
+   |    |    |    |    | ['位置Static2', 'Static20', '位置3']
+   |    |    |    |    | child_window(title="位置", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '导航'    (L85, T165, R137, B186)
+   |    |    | ['导航CheckBox', 'CheckBox2', '导航', '导航0', '导航1']
+   |    |    | child_window(title="导航", auto_id="ckbFly", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image10']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '导航'    (L103, T165, R137, B186)
+   |    |    |    | ['导航Static', '导航2', 'Static21', '导航Static0', '导航Static1']
+   |    |    |    | child_window(title="导航", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '导航'    (L105, T165, R137, B186)
+   |    |    |    |    | ['导航Static2', '导航3', 'Static22']
+   |    |    |    |    | child_window(title="导航", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '组织'    (L85, T196, R137, B216)
+   |    |    | ['组织CheckBox', '组织', 'CheckBox3', '组织0', '组织1']
+   |    |    | child_window(title="组织", auto_id="ckbTissue", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image11']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '组织'    (L103, T196, R137, B216)
+   |    |    |    | ['组织Static', '组织2', 'Static23', '组织Static0', '组织Static1']
+   |    |    |    | child_window(title="组织", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '组织'    (L105, T196, R137, B216)
+   |    |    |    |    | ['组织Static2', '组织3', 'Static24']
+   |    |    |    |    | child_window(title="组织", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '导丝'    (L85, T226, R137, B246)
+   |    |    | ['导丝', 'CheckBox4', '导丝CheckBox', '导丝0', '导丝1']
+   |    |    | child_window(title="导丝", auto_id="ckbGuide", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image12']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '导丝'    (L103, T226, R137, B246)
+   |    |    |    | ['导丝2', '导丝Static', 'Static25', '导丝Static0', '导丝Static1']
+   |    |    |    | child_window(title="导丝", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '导丝'    (L105, T226, R137, B246)
+   |    |    |    |    | ['导丝3', '导丝Static2', 'Static26']
+   |    |    |    |    | child_window(title="导丝", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '支架'    (L85, T256, R137, B277)
+   |    |    | ['CheckBox5', '支架CheckBox', '支架', '支架0', '支架1']
+   |    |    | child_window(title="支架", auto_id="ckbStent", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image13']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '支架'    (L103, T256, R137, B277)
+   |    |    |    | ['支架Static', 'Static27', '支架2', '支架Static0', '支架Static1']
+   |    |    |    | child_window(title="支架", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '支架'    (L105, T256, R137, B277)
+   |    |    |    |    | ['支架Static2', 'Static28', '支架3']
+   |    |    |    |    | child_window(title="支架", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '仅支架'    (L85, T287, R153, B307)
+   |    |    | ['仅支架', 'CheckBox6', '仅支架CheckBox', '仅支架0', '仅支架1']
+   |    |    | child_window(title="仅支架", auto_id="ckbOnlyStent", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image14']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '仅支架'    (L103, T287, R153, B307)
+   |    |    |    | ['仅支架Static', '仅支架2', 'Static29', '仅支架Static0', '仅支架Static1']
+   |    |    |    | child_window(title="仅支架", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '仅支架'    (L105, T287, R153, B307)
+   |    |    |    |    | ['仅支架Static2', '仅支架3', 'Static30']
+   |    |    |    |    | child_window(title="仅支架", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '分叉'    (L85, T317, R137, B337)
+   |    |    | ['分叉', 'CheckBox7', '分叉CheckBox', '分叉0', '分叉1']
+   |    |    | child_window(title="分叉", auto_id="ckbBifurcation", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image15']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '分叉'    (L103, T317, R137, B337)
+   |    |    |    | ['分叉Static', '分叉2', 'Static31', '分叉Static0', '分叉Static1']
+   |    |    |    | child_window(title="分叉", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '分叉'    (L105, T317, R137, B337)
+   |    |    |    |    | ['分叉Static2', '分叉3', 'Static32']
+   |    |    |    |    | child_window(title="分叉", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '切面'    (L85, T347, R137, B368)
+   |    |    | ['切面CheckBox', 'CheckBox8', '切面', '切面0', '切面1']
+   |    |    | child_window(title="切面", auto_id="ckbClip", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Image16']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '切面'    (L103, T347, R137, B368)
+   |    |    |    | ['切面Static', 'Static33', '切面2', '切面Static0', '切面Static1']
+   |    |    |    | child_window(title="切面", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '切面'    (L105, T347, R137, B368)
+   |    |    |    |    | ['切面Static2', 'Static34', '切面3']
+   |    |    |    |    | child_window(title="切面", control_type="Text")
+   |    |    |
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button10']
+   |    |    |
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button11']
+   |    |    | child_window(auto_id="btnShowComplete", control_type="Button")
+   |    |    |
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button12']
+   |    |    | child_window(auto_id="btnProfile", control_type="Button")
+   |    |    |
+   |    |    | Button - ''    (L85, T378, R165, B416)
+   |    |    | ['Button13', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmButton']
+   |    |    | child_window(auto_id="btnReset", control_type="Button")
+   |    |    |    |
+   |    |    |    | Image - ''    (L95, T387, R114, B406)
+   |    |    |    | ['Image17', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage']
+   |    |    |    |
+   |    |    |    | Static - '重置'    (L114, T381, R156, B412)
+   |    |    |    | ['重置Static', 'Static35', '重置', '重置Static0', '重置Static1', '重置0', '重置1']
+   |    |    |    | child_window(title="重置", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '重置'    (L119, T386, R151, B407)
+   |    |    |    |    | ['重置Static2', 'Static36', '重置2']
+   |    |    |    |    | child_window(title="重置", control_type="Text")
+   |    |    |
+   |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    | ['Pane', 'Pane0', 'Pane1']
+   |    |    | child_window(auto_id="wfrmhost", control_type="Pane")
+   |    |
+   |    | Custom - ''    (L0, T0, R0, B0)
+   |    | ['Custom5']
+   |    | child_window(auto_id="dsaWindow", control_type="Custom")
+   |    |    |
+   |    |    | Static - '医院'    (L25, T135, R67, B165)
+   |    |    | ['医院Static', '医院', 'Static37', '医院Static0', '医院Static1', '医院0', '医院1']
+   |    |    | child_window(title="医院", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '医院'    (L30, T140, R62, B160)
+   |    |    |    | ['医院Static2', '医院2', 'Static38']
+   |    |    |    | child_window(title="医院", control_type="Text")
+   |    |    |
+   |    |    | ComboBox - ''    (L67, T135, R287, B165)
+   |    |    | ['患者信息ComboBox', 'ComboBox3', 'ComboBox30', 'ComboBox31']
+   |    |    | child_window(auto_id="cmbHospital", control_type="ComboBox")
+   |    |    |    |
+   |    |    |    | Edit - ''    (L70, T141, R74, B159)
+   |    |    |    | ['Edit3', '患者信息Edit']
+   |    |    |    | child_window(auto_id="PART_EditableTextBox", control_type="Edit")
+   |    |    |    |
+   |    |    |    | ListItem - 'Default'    (L0, T0, R0, B0)
+   |    |    |    | ['ListItem23', 'DefaultListItem', 'Default']
+   |    |    |    | child_window(title="Default", control_type="ListItem")
+   |    |    |
+   |    |    | Static - '导管室'    (L297, T135, R355, B165)
+   |    |    | ['导管室Static', '导管室', 'Static39', '导管室Static0', '导管室Static1', '导管室0', '导管室1']
+   |    |    | child_window(title="导管室", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '导管室'    (L302, T140, R350, B160)
+   |    |    |    | ['导管室Static2', '导管室2', 'Static40']
+   |    |    |    | child_window(title="导管室", control_type="Text")
+   |    |    |
+   |    |    | ComboBox - ''    (L355, T135, R475, B165)
+   |    |    | ['李一发ComboBox', 'ComboBox4']
+   |    |    | child_window(auto_id="cmbHospitalRoom", control_type="ComboBox")
+   |    |    |    |
+   |    |    |    | Edit - 'Default'    (L358, T141, R411, B159)
+   |    |    |    | ['李一发Edit', 'Edit4']
+   |    |    |    | child_window(title="Default", auto_id="PART_EditableTextBox", control_type="Edit")
+   |    |    |    |
+   |    |    |    | ListItem - 'F_2.Models.HospitalRoom'    (L0, T0, R0, B0)
+   |    |    |    | ['ListItem24', 'F_2.Models.HospitalRoomListItem', 'F_2.Models.HospitalRoom']
+   |    |    |    | child_window(title="F_2.Models.HospitalRoom", control_type="ListItem")
+   |    |    |
+   |    |    | Static - '插槽'    (L0, T0, R0, B0)
+   |    |    | ['插槽', 'Static41', '插槽Static']
+   |    |    | child_window(title="插槽", control_type="Text")
+   |    |    |
+   |    |    | ComboBox - ''    (L0, T0, R0, B0)
+   |    |    | ['ComboBox12', 'ComboBox32', 'ComboBox5', 'ComboBox22']
+   |    |    | child_window(auto_id="cmbRecNum", control_type="ComboBox")
+   |    |    |
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button14']
+   |    |    | child_window(auto_id="btnSetting", control_type="Button")
+   |    |    |
+   |    |    | Button - ''    (L30, T133, R165, B168)
+   |    |    | ['患者信息Button', 'Button15']
+   |    |    | child_window(auto_id="btnMark", control_type="Button")
+   |    |    |    |
+   |    |    |    | Image - ''    (L67, T141, R86, B160)
+   |    |    |    | ['患者信息Image', 'Image18']
+   |    |    |    |
+   |    |    |    | Static - '配准'    (L86, T135, R128, B165)
+   |    |    |    | ['Static42', '配准', '配准Static', '配准0', '配准1', '配准Static0', '配准Static1']
+   |    |    |    | child_window(title="配准", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '配准'    (L91, T140, R123, B160)
+   |    |    |    |    | ['Static43', '配准2', '配准Static2']
+   |    |    |    |    | child_window(title="配准", control_type="Text")
+   |    |    |
+   |    |    | CheckBox - '轮廓'    (L205, T139, R259, B161)
+   |    |    | ['轮廓CheckBox', 'CheckBox9', '轮廓', '轮廓0', '轮廓1']
+   |    |    | child_window(title="轮廓", auto_id="ckbHide", control_type="CheckBox")
+   |    |    |    |
+   |    |    |    | Image - ''    (L207, T144, R221, B156)
+   |    |    |    | [')Image', 'Image19', ')Image0', ')Image1']
+   |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |
+   |    |    |    | Static - '轮廓'    (L223, T139, R259, B161)
+   |    |    |    | ['Static44', '轮廓2', '轮廓Static', '轮廓Static0', '轮廓Static1']
+   |    |    |    | child_window(title="轮廓", auto_id="lbContent", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '轮廓'    (L223, T139, R259, B161)
+   |    |    |    |    | ['Static45', '轮廓3', '轮廓Static2']
+   |    |    |    |    | child_window(title="轮廓", control_type="Text")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image20']
+   |    |    | child_window(auto_id="DSAImage", control_type="Image")
+   |    |    |
+   |    |    | Static - ''    (L230, T190, R240, B200)
+   |    |    | [')Static', 'Static46', ')Static0', ')Static1']
+   |    |    | child_window(auto_id="labNum", control_type="Text")
+   |    |    |
+   |    |    | Thumb - ''    (L130, T170, R140, B186)
+   |    |    | ['2022-05-11 12:12:38Thumb', 'Thumb2']
+   |    |    | child_window(auto_id="thb", control_type="Thumb")
+   |    |    |
+   |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    | ['Pane2']
+   |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image21']
+   |    |    |
+   |    |    | Static - 'DSA受HDCP保护无法录制'    (L0, T0, R0, B0)
+   |    |    | ['DSA受HDCP保护无法录制', 'DSA受HDCP保护无法录制Static', 'Static47']
+   |    |    | child_window(title="DSA受HDCP保护无法录制", control_type="Text")
+   |    |    |
+   |    |    | Static - 'DSA 无信号'    (L0, T0, R0, B0)
+   |    |    | ['DSA 无信号Static', 'DSA 无信号', 'Static48']
+   |    |    | child_window(title="DSA 无信号", control_type="Text")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image22']
+   |    |    | child_window(auto_id="gif", control_type="Image")
+   |    |    |
+   |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    | ['Static49']
+   |    |    | child_window(auto_id="lbDes", control_type="Text")
+   |    |
+   |    | Custom - ''    (L0, T55, R1280, B130)
+   |    | ['患者信息Custom', 'Custom6', '患者信息Custom0', '患者信息Custom1']
+   |    |    |
+   |    |    | Image - ''    (L30, T87, R54, B114)
+   |    |    | ['Image23']
+   |    |    |
+   |    |    | Static - '患者信息'    (L54, T85, R138, B116)
+   |    |    | ['患者信息Static', '患者信息', 'Static50', '患者信息Static0', '患者信息Static1', '患者信息0', '患者信息1']
+   |    |    | child_window(title="患者信息", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '患者信息'    (L66, T89, R138, B112)
+   |    |    |    | ['患者信息Static2', '患者信息2', 'Static51']
+   |    |    |    | child_window(title="患者信息", control_type="Text")
+   |    |    |
+   |    |    | Static - 'ID:'    (L180, T85, R226, B116)
+   |    |    | ['ID:Static', 'Static52', 'ID:', 'ID:Static0', 'ID:Static1', 'ID:0', 'ID:1']
+   |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - 'ID:'    (L195, T85, R226, B116)
+   |    |    |    | ['ID:Static2', 'Static53', 'ID:2']
+   |    |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - 'ID:'    (L200, T90, R221, B111)
+   |    |    |    |    | ['ID:Static3', 'Static54', 'ID:3']
+   |    |    |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |
+   |    |    | Static - '1677046'    (L226, T90, R306, B111)
+   |    |    | ['1677046Static', '1677046', 'Static55', '1677046Static0', '1677046Static1', '16770460', '16770461']
+   |    |    | child_window(title="1677046", auto_id="id", control_type="Text")
+   |    |    |
+   |    |    | Static - '姓名:'    (L306, T85, R367, B116)
+   |    |    | ['姓名:', '姓名:Static', 'Static56', '姓名:0', '姓名:1', '姓名:Static0', '姓名:Static1']
+   |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '姓名:'    (L321, T85, R367, B116)
+   |    |    |    | ['姓名:2', '姓名:Static2', 'Static57']
+   |    |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '姓名:'    (L326, T90, R362, B111)
+   |    |    |    |    | ['姓名:3', '姓名:Static3', 'Static58']
+   |    |    |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |
+   |    |    | Static - '李一发'    (L367, T90, R430, B111)
+   |    |    | ['李一发Static', 'Static59', '李一发', '李一发Static0', '李一发Static1', '李一发0', '李一发1']
+   |    |    | child_window(title="李一发", auto_id="name", control_type="Text")
+   |    |    |
+   |    |    | Static - '性别:'    (L430, T85, R491, B116)
+   |    |    | ['性别:Static', '性别:', 'Static60', '性别:Static0', '性别:Static1', '性别:0', '性别:1']
+   |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '性别:'    (L445, T85, R491, B116)
+   |    |    |    | ['性别:Static2', '性别:2', 'Static61']
+   |    |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '性别:'    (L450, T90, R486, B111)
+   |    |    |    |    | ['性别:Static3', '性别:3', 'Static62']
+   |    |    |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |
+   |    |    | Static - '男'    (L491, T90, R837, B111)
+   |    |    | ['男Static', '男', 'Static63', '男Static0', '男Static1', '男0', '男1']
+   |    |    | child_window(title="男", auto_id="sex", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '男'    (L491, T90, R507, B111)
+   |    |    |    | ['男Static2', '男2', 'Static64']
+   |    |    |    | child_window(title="男", control_type="Text")
+   |    |
+   |    | Button - ''    (L1140, T72, R1260, B114)
+   |    | ['男Button', 'Button16', '编辑患者Button', '男Button0', '男Button1', '编辑患者Button0', '编辑患者Button1']
+   |    | child_window(auto_id="btnOutPut", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1164, T83, R1184, B102)
+   |    |    | ['编辑患者Image', 'Image24']
+   |    |    |
+   |    |    | Static - '导出'    (L1194, T77, R1236, B108)
+   |    |    | ['导出Static', '导出', 'Static65', '导出Static0', '导出Static1', '导出0', '导出1']
+   |    |    | child_window(title="导出", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '导出'    (L1199, T82, R1231, B103)
+   |    |    |    | ['导出Static2', '导出2', 'Static66']
+   |    |    |    | child_window(title="导出", control_type="Text")
+   |    |
+   |    | Button - ''    (L1010, T72, R1130, B114)
+   |    | ['Button17', '截屏Button', '截屏Button0', '截屏Button1']
+   |    | child_window(auto_id="btnPrint", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1034, T83, R1054, B103)
+   |    |    | ['截屏Image', 'Image25', '截屏Image0', '截屏Image1']
+   |    |    |
+   |    |    | Static - '打印'    (L1064, T77, R1106, B108)
+   |    |    | ['打印', '打印Static', 'Static67', '打印0', '打印1', '打印Static0', '打印Static1']
+   |    |    | child_window(title="打印", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '打印'    (L1069, T82, R1101, B103)
+   |    |    |    | ['打印2', '打印Static2', 'Static68']
+   |    |    |    | child_window(title="打印", control_type="Text")
+   |    |
+   |    | Button - ''    (L880, T72, R1000, B114)
+   |    | ['男Button2', 'Button18']
+   |    | child_window(auto_id="btnClipImage", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L903, T82, R925, B104)
+   |    |    | ['男Image', 'Image26']
+   |    |    |
+   |    |    | Static - '截屏'    (L935, T77, R977, B108)
+   |    |    | ['Static69', '截屏Static', '截屏', '截屏Static0', '截屏Static1', '截屏0', '截屏1']
+   |    |    | child_window(title="截屏", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '截屏'    (L940, T82, R972, B103)
+   |    |    |    | ['Static70', '截屏Static2', '截屏2']
+   |    |    |    | child_window(title="截屏", control_type="Text")
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image27']
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image28']
+   |    |
+   |    | Static - '4.61mm'    (L0, T0, R0, B0)
+   |    | ['4.61mm', 'Static71', '4.61mmStatic']
+   |    | child_window(title="4.61mm", auto_id="txtDes", control_type="Text")
+   |    |
+   |    | Static - '面积=6.78mm²'    (L0, T0, R0, B0)
+   |    | ['面积=6.78mm²Static', '面积=6.78mm²', 'Static72']
+   |    | child_window(title="面积=6.78mm²", auto_id="tbProximalTop", control_type="Text")
+   |    |
+   |    | Static - 'AS=4.46%'    (L0, T0, R0, B0)
+   |    | ['AS=4.46%', 'AS=4.46%Static', 'Static73']
+   |    | child_window(title="AS=4.46%", auto_id="tbProximal", control_type="Text")
+   |    |
+   |    | Static - '面积=7.62mm²'    (L0, T0, R0, B0)
+   |    | ['面积=7.62mm²', '面积=7.62mm²Static', 'Static74']
+   |    | child_window(title="面积=7.62mm²", auto_id="tbDistalTop", control_type="Text")
+   |    |
+   |    | Static - 'AS=15.03%'    (L0, T0, R0, B0)
+   |    | ['AS=15.03%Static', 'AS=15.03%', 'Static75']
+   |    | child_window(title="AS=15.03%", auto_id="tbDistal", control_type="Text")
+   |    |
+   |    | Static - '面积 6.48mm²'    (L0, T0, R0, B0)
+   |    | ['面积 6.48mm²Static', 'Static76', '面积 6.48mm²']
+   |    | child_window(title="面积 6.48mm²", auto_id="tbNarrowTop", control_type="Text")
+   |    |
+   |    | Static - 'Φ=2.87mm，AS=10.06%'    (L0, T0, R0, B0)
+   |    | ['Φ=2.87mm，AS=10.06%', 'Static77', 'Φ=2.87mm，AS=10.06%Static']
+   |    | child_window(title="Φ=2.87mm，AS=10.06%", auto_id="tbNarrow", control_type="Text")
+   |    |
+   |    | Thumb - ''    (L0, T0, R0, B0)
+   |    | ['Thumb3']
+   |    | child_window(auto_id="thumb", control_type="Thumb")
+   |    |
+   |    | Thumb - ''    (L0, T0, R0, B0)
+   |    | ['Thumb4']
+   |    | child_window(auto_id="thbProximal", control_type="Thumb")
+   |    |
+   |    | Thumb - ''    (L0, T0, R0, B0)
+   |    | ['Thumb5']
+   |    | child_window(auto_id="thbDistal", control_type="Thumb")
+   |    |
+   |    | Thumb - ''    (L0, T0, R0, B0)
+   |    | ['Thumb6']
+   |    | child_window(auto_id="thbNarrow", control_type="Thumb")
+   |    |
+   |    | Static - 'OFR：999'    (L0, T0, R0, B0)
+   |    | ['OFR：999Static', 'OFR：999', 'Static78']
+   |    | child_window(title="OFR：999", auto_id="des", control_type="Text")
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image29']
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image30']
+   |    | child_window(auto_id="imgNarrow", control_type="Image")
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image31']
+   |    | child_window(auto_id="gif", control_type="Image")
+   |    |
+   |    | Static - 'Lumen计算中.....'    (L0, T0, R0, B0)
+   |    | ['Lumen计算中.....Static', 'Lumen计算中.....', 'Static79']
+   |    | child_window(title="Lumen计算中.....", auto_id="lbDes", control_type="Text")
+   |    |
+   |    | Custom - ''    (L5, T774, R1280, B934)
+   |    | ['0Custom', 'Custom7']
+   |    | child_window(auto_id="imageMprOper", control_type="Custom")
+   |    |    |
+   |    |    | Thumb - ''    (L356, T779, R364, B929)
+   |    |    | ['  长度:10mmThumb', 'Thumb7']
+   |    |    | child_window(auto_id="zong", control_type="Thumb")
+   |    |    |
+   |    |    | Thumb - ''    (L5, T774, R14, B779)
+   |    |    | ['面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmThumb', 'Thumb8']
+   |    |    | child_window(auto_id="leftPro", control_type="Thumb")
+   |    |    |
+   |    |    | Thumb - ''    (L1240, T774, R1241, B779)
+   |    |    | ['查看Thumb', 'Thumb9']
+   |    |    | child_window(auto_id="rightPro", control_type="Thumb")
+   |    |    |
+   |    |    | Image - ''    (L1212, T914, R1242, B934)
+   |    |    | ['18mm/sImage', 'Image32', '18mm/sImage0', '18mm/sImage1']
+   |    |    |
+   |    |    | Image - ''    (L7, T914, R37, B934)
+   |    |    | ['Image33', '2Image']
+   |    |    |
+   |    |    | ScrollBar - ''    (L237, T785, R481, B801)
+   |    |    | ['ScrollBar6', '10ScrollBar']
+   |    |    | child_window(auto_id="bd", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Image - ''    (L471, T785, R481, B795)
+   |    |    |    | ['Image34', '20Image2']
+   |    |    |
+   |    |    | Static - '1'    (L0, T0, R0, B0)
+   |    |    | ['Static80', '1Static', '1']
+   |    |    | child_window(title="1", control_type="Text")
+   |    |    |
+   |    |    | Static - '  长度:10mm'    (L239, T806, R310, B821)
+   |    |    | ['  长度:10mmStatic', 'Static81', '  长度:10mm']
+   |    |    | child_window(title="  长度:10mm", control_type="Text")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image35']
+   |    |    | child_window(auto_id="closeBtn", control_type="Image")
+   |    |    |
+   |    |    | Static - '角度:90.0°'    (L267, T868, R333, B892)
+   |    |    | ['角度:90.0°Static', 'Static82', '角度:90.0°', '角度:90.0°Static0', '角度:90.0°Static1', '角度:90.0°0', '角度:90.0°1']
+   |    |    | child_window(title="角度:90.0°", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '角度:90.0°'    (L272, T873, R328, B887)
+   |    |    |    | ['角度:90.0°Static2', 'Static83', '角度:90.0°2']
+   |    |    |    | child_window(title="角度:90.0°", control_type="Text")
+   |    |    |
+   |    |    | Static - '0'    (L-1, T784, R16, B808)
+   |    |    | ['0Static3', '03', 'Static84']
+   |    |    | child_window(title="0", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '0'    (L4, T789, R11, B803)
+   |    |    |    | ['0Static4', '04', 'Static85']
+   |    |    |    | child_window(title="0", control_type="Text")
+   |    |    |
+   |    |    | Static - '10'    (L228, T784, R251, B808)
+   |    |    | ['10', '10Static', 'Static86', '100', '101', '10Static0', '10Static1']
+   |    |    | child_window(title="10", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '10'    (L233, T789, R246, B803)
+   |    |    |    | ['102', '10Static2', 'Static87']
+   |    |    |    | child_window(title="10", control_type="Text")
+   |    |    |
+   |    |    | Static - '20'    (L456, T784, R480, B808)
+   |    |    | ['20Static', '20', 'Static88', '20Static0', '20Static1', '200', '201']
+   |    |    | child_window(title="20", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '20'    (L461, T789, R475, B803)
+   |    |    |    | ['20Static2', '202', 'Static89']
+   |    |    |    | child_window(title="20", control_type="Text")
+   |    |    |
+   |    |    | Static - '30'    (L685, T784, R708, B808)
+   |    |    | ['30', '30Static', 'Static90', '300', '301', '30Static0', '30Static1']
+   |    |    | child_window(title="30", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '30'    (L690, T789, R703, B803)
+   |    |    |    | ['302', '30Static2', 'Static91']
+   |    |    |    | child_window(title="30", control_type="Text")
+   |    |    |
+   |    |    | Static - '40'    (L914, T784, R937, B808)
+   |    |    | ['40', 'Static92', '40Static', '400', '401', '40Static0', '40Static1']
+   |    |    | child_window(title="40", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '40'    (L919, T789, R932, B803)
+   |    |    |    | ['402', 'Static93', '40Static2']
+   |    |    |    | child_window(title="40", control_type="Text")
+   |    |    |
+   |    |    | Static - '50'    (L1143, T784, R1166, B808)
+   |    |    | ['50Static', '50', 'Static94', '50Static0', '50Static1', '500', '501']
+   |    |    | child_window(title="50", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '50'    (L1148, T789, R1161, B803)
+   |    |    |    | ['50Static2', '502', 'Static95']
+   |    |    |    | child_window(title="50", control_type="Text")
+   |    |    |
+   |    |    | Static - 'mm'    (L1200, T784, R1230, B808)
+   |    |    | ['mmStatic', 'mm', 'Static96', 'mmStatic0', 'mmStatic1', 'mm0', 'mm1']
+   |    |    | child_window(title="mm", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - 'mm'    (L1205, T789, R1225, B803)
+   |    |    |    | ['mmStatic2', 'mm2', 'Static97']
+   |    |    |    | child_window(title="mm", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s', '18mm/sStatic', 'Static98', '18mm/s0', '18mm/s1', '18mm/sStatic0', '18mm/sStatic1']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s2', '18mm/sStatic2', 'Static99']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s3', '18mm/sStatic3', 'Static100']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s4', '18mm/sStatic4', 'Static101']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s5', '18mm/sStatic5', 'Static102']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s6', '18mm/sStatic6', 'Static103']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s7', '18mm/sStatic7', 'Static104']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s8', '18mm/sStatic8', 'Static105']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s9', '18mm/sStatic9', 'Static106']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s10', '18mm/sStatic10', 'Static107']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s11', '18mm/sStatic11', 'Static108']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s12', '18mm/sStatic12', 'Static109']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s13', '18mm/sStatic13', 'Static110']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s14', '18mm/sStatic14', 'Static111']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s15', '18mm/sStatic15', 'Static112']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s16', '18mm/sStatic16', 'Static113']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s17', '18mm/sStatic17', 'Static114']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s18', '18mm/sStatic18', 'Static115']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s19', '18mm/sStatic19', 'Static116']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s20', '18mm/sStatic20', 'Static117']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s21', '18mm/sStatic21', 'Static118']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s22', '18mm/sStatic22', 'Static119']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s23', '18mm/sStatic23', 'Static120']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s24', '18mm/sStatic24', 'Static121']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s25', '18mm/sStatic25', 'Static122']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s26', '18mm/sStatic26', 'Static123']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s27', '18mm/sStatic27', 'Static124']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s28', '18mm/sStatic28', 'Static125']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s29', '18mm/sStatic29', 'Static126']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s30', '18mm/sStatic30', 'Static127']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s31', '18mm/sStatic31', 'Static128']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s32', '18mm/sStatic32', 'Static129']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s33', '18mm/sStatic33', 'Static130']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s34', '18mm/sStatic34', 'Static131']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s35', '18mm/sStatic35', 'Static132']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s36', '18mm/sStatic36', 'Static133']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s37', '18mm/sStatic37', 'Static134']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s38', '18mm/sStatic38', 'Static135']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s39', '18mm/sStatic39', 'Static136']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s40', '18mm/sStatic40', 'Static137']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s41', '18mm/sStatic41', 'Static138']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s42', '18mm/sStatic42', 'Static139']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s43', '18mm/sStatic43', 'Static140']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s44', '18mm/sStatic44', 'Static141']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s45', '18mm/sStatic45', 'Static142']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s46', '18mm/sStatic46', 'Static143']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s47', '18mm/sStatic47', 'Static144']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s48', '18mm/sStatic48', 'Static145']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Static - '0'    (L15, T839, R34, B867)
+   |    |    | ['0Static5', '05', 'Static146']
+   |    |    | child_window(title="0", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '0'    (L20, T844, R29, B862)
+   |    |    |    | ['0Static6', '06', 'Static147']
+   |    |    |    | child_window(title="0", control_type="Text")
+   |    |    |
+   |    |    | Static - '2'    (L15, T871, R34, B899)
+   |    |    | ['2Static', '2', 'Static148', '2Static0', '2Static1']
+   |    |    | child_window(title="2", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '2'    (L20, T876, R29, B894)
+   |    |    |    | ['2Static2', '22', 'Static149']
+   |    |    |    | child_window(title="2", control_type="Text")
+   |    |    |
+   |    |    | Static - '2'    (L15, T807, R34, B835)
+   |    |    | ['2Static3', '23', 'Static150']
+   |    |    | child_window(title="2", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '2'    (L20, T812, R29, B830)
+   |    |    |    | ['2Static4', '24', 'Static151']
+   |    |    |    | child_window(title="2", control_type="Text")
+   |    |    |
+   |    |    | Static - '18mm/s'    (L1160, T914, R1213, B938)
+   |    |    | ['18mm/s49', '18mm/sStatic49', 'Static152']
+   |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '18mm/s'    (L1165, T919, R1208, B933)
+   |    |    |    | ['18mm/s50', '18mm/sStatic50', 'Static153']
+   |    |    |    | child_window(title="18mm/s", control_type="Text")
+   |    |    |
+   |    |    | Image - ''    (L1249, T773, R1274, B798)
+   |    |    | ['Image36', 'mmImage', 'mmImage0', 'mmImage1']
+   |    |    |
+   |    |    | Image - ''    (L1242, T833, R1280, B858)
+   |    |    | ['Image37', 'mmImage2']
+   |    |    | child_window(auto_id="addSign", control_type="Image")
+   |    |    |
+   |    |    | Image - ''    (L1242, T858, R1280, B883)
+   |    |    | ['Image38', 'mmImage3']
+   |    |    | child_window(auto_id="preSign", control_type="Image")
+   |    |    |
+   |    |    | Image - ''    (L1243, T883, R1279, B908)
+   |    |    | ['Image39', 'mmImage4']
+   |    |    | child_window(auto_id="nextSign", control_type="Image")
+   |    |    |
+   |    |    | Image - ''    (L1242, T908, R1280, B933)
+   |    |    | ['18mm/sImage2', 'Image40']
+   |    |    | child_window(auto_id="delSign", control_type="Image")
+   |    |
+   |    | Button - ''    (L1295, T162, R1311, B178)
+   |    | ['Button19', '导出Button', '导出Button0', '导出Button1']
+   |    | child_window(auto_id="btnGd1", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1295, T162, R1311, B178)
+   |    |    | ['导出Image', 'Image41', '导出Image0', '导出Image1']
+   |    |    | child_window(auto_id="img", control_type="Image")
+   |    |
+   |    | Button - ''    (L1280, T190, R1325, B230)
+   |    | ['Button20', '导出Button2']
+   |    | child_window(auto_id="btnCurve", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T196, R1316, B223)
+   |    |    | ['导出Image2', 'Image42']
+   |    |
+   |    | Button - ''    (L1280, T234, R1325, B274)
+   |    | ['Button21', '导出Button3']
+   |    | child_window(auto_id="btnLine", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T241, R1316, B267)
+   |    |    | ['导出Image3', 'Image43']
+   |    |
+   |    | Button - ''    (L1280, T278, R1325, B318)
+   |    | ['Button22', '导出Button4']
+   |    | child_window(auto_id="btnAngle", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T285, R1316, B311)
+   |    |    | ['导出Image4', 'Image44']
+   |    |
+   |    | Button - ''    (L1280, T322, R1325, B362)
+   |    | ['Button23', '查看Button2']
+   |    | child_window(auto_id="btnWord", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T329, R1316, B355)
+   |    |    | ['查看Image2', 'Image45']
+   |    |
+   |    | Button - ''    (L1280, T366, R1325, B406)
+   |    | ['Button24', '查看Button3']
+   |    | child_window(auto_id="btnAS", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1293, T372, R1312, B399)
+   |    |    | ['查看Image3', 'Image46']
+   |    |
+   |    | Button - ''    (L1280, T410, R1325, B450)
+   |    | ['Button25', '查看Button4']
+   |    | child_window(auto_id="btnThickness", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T417, R1316, B443)
+   |    |    | ['查看Image4', 'Image47']
+   |    |
+   |    | Button - ''    (L1280, T454, R1325, B494)
+   |    | ['Button26', '查看Button5']
+   |    | child_window(auto_id="btnSwell", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T461, R1316, B487)
+   |    |    | ['查看Image5', 'Image48']
+   |    |
+   |    | Button - ''    (L0, T0, R0, B0)
+   |    | ['Button27']
+   |    | child_window(auto_id="btnPlaque", control_type="Button")
+   |    |
+   |    | Button - ''    (L0, T0, R0, B0)
+   |    | ['Button28']
+   |    |
+   |    | Button - ''    (L1280, T498, R1325, B538)
+   |    | ['Button29', '查看Button6']
+   |    | child_window(auto_id="btnDelChose", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1290, T505, R1316, B531)
+   |    |    | ['查看Image6', 'Image49']
+   |    |
+   |    | Button - ''    (L1280, T542, R1325, B582)
+   |    | ['Button30', '查看Button7']
+   |    | child_window(auto_id="btnDelAll", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1291, T548, R1314, B575)
+   |    |    | ['查看Image7', 'Image50']
+   |    |
+   |    | CheckBox - '3D'    (L-159, T142, R9, B163)
+   |    | ['3DCheckBox', 'CheckBox10', '3D', '3D0', '3D1']
+   |    | child_window(title="3D", auto_id="ckb3d", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image51']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '3D'    (L-141, T142, R-109, B163)
+   |    |    | ['3D2', 'Static154', '3DStatic', '3DStatic0', '3DStatic1']
+   |    |    | child_window(title="3D", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '3D'    (L-131, T142, R-109, B163)
+   |    |    |    | ['3D3', 'Static155', '3DStatic2']
+   |    |    |    | child_window(title="3D", control_type="Text")
+   |    |
+   |    | CheckBox - 'DSA'    (L-159, T177, R9, B198)
+   |    | ['DSA', 'DSACheckBox', 'CheckBox11', 'DSA0', 'DSA1']
+   |    | child_window(title="DSA", auto_id="ckbdsa", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image52']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - 'DSA'    (L-141, T177, R-98, B198)
+   |    |    | ['DSA2', 'Static156', 'DSAStatic', 'DSAStatic0', 'DSAStatic1']
+   |    |    | child_window(title="DSA", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - 'DSA'    (L-131, T177, R-98, B198)
+   |    |    |    | ['DSA3', 'Static157', 'DSAStatic2']
+   |    |    |    | child_window(title="DSA", control_type="Text")
+   |    |
+   |    | CheckBox - '纵切面'    (L-159, T213, R9, B233)
+   |    | ['纵切面CheckBox', 'CheckBox12', '纵切面', '纵切面0', '纵切面1']
+   |    | child_window(title="纵切面", auto_id="ckbzong", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L-157, T217, R-143, B229)
+   |    |    | ['Image53']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '纵切面'    (L-141, T213, R-83, B233)
+   |    |    | ['纵切面Static', 'Static158', '纵切面2', '纵切面Static0', '纵切面Static1']
+   |    |    | child_window(title="纵切面", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '纵切面'    (L-131, T213, R-83, B233)
+   |    |    |    | ['纵切面Static2', 'Static159', '纵切面3']
+   |    |    |    | child_window(title="纵切面", control_type="Text")
+   |    |
+   |    | CheckBox - '管腔分析'    (L-159, T247, R9, B268)
+   |    | ['管腔分析', '管腔分析CheckBox', 'CheckBox13', '管腔分析0', '管腔分析1']
+   |    | child_window(title="管腔分析", auto_id="ckblumen", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image54']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '管腔分析'    (L-141, T247, R-67, B268)
+   |    |    | ['管腔分析Static', '管腔分析2', 'Static160', '管腔分析Static0', '管腔分析Static1']
+   |    |    | child_window(title="管腔分析", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '管腔分析'    (L-131, T247, R-67, B268)
+   |    |    |    | ['管腔分析Static2', '管腔分析3', 'Static161']
+   |    |    |    | child_window(title="管腔分析", control_type="Text")
+   |    |
+   |    | Button - ''    (L-72, T293, R-52, B318)
+   |    | ['隐藏标记Button', 'Button31', '管腔分析Button', '隐藏标记Button0', '隐藏标记Button1']
+   |    | child_window(auto_id="btnPreFrame", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L-70, T298, R-55, B313)
+   |    |    | ['隐藏标记Image', 'Image55', '隐藏标记Image0', '隐藏标记Image1']
+   |    |
+   |    | Button - ''    (L-47, T293, R-27, B318)
+   |    | ['隐藏标记Button2', 'Button32']
+   |    | child_window(auto_id="btnNextFrame", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L-45, T298, R-30, B313)
+   |    |    | ['隐藏标记Image2', 'Image56']
+   |    |
+   |    | Button - ''    (L-17, T298, R-1, B314)
+   |    | ['隐藏标记Button3', 'Button33']
+   |    | child_window(auto_id="btnGd", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L-17, T298, R-1, B314)
+   |    |    | ['隐藏标记Image3', 'Image57']
+   |    |    | child_window(auto_id="img", control_type="Image")
+   |    |
+   |    | Button - '重置'    (L-60, T324, R0, B346)
+   |    | ['Button34', '重置Button', '重置3']
+   |    | child_window(title="重置", auto_id="btnReset", control_type="Button")
+   |    |    |
+   |    |    | Static - '重置'    (L-42, T327, R-18, B343)
+   |    |    | ['重置Static3', 'Static162', '重置4']
+   |    |    | child_window(title="重置", control_type="Text")
+   |    |
+   |    | CheckBox - '隐藏标记'    (L-177, T296, R10, B314)
+   |    | ['隐藏标记', '隐藏标记CheckBox', 'CheckBox14', '隐藏标记0', '隐藏标记1']
+   |    | child_window(title="隐藏标记", auto_id="ckbSign", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image58']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '隐藏标记'    (L-159, T296, R-100, B314)
+   |    |    | ['隐藏标记2', '隐藏标记Static', 'Static163', '隐藏标记Static0', '隐藏标记Static1']
+   |    |    | child_window(title="隐藏标记", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '隐藏标记'    (L-156, T296, R-100, B314)
+   |    |    |    | ['隐藏标记3', '隐藏标记Static2', 'Static164']
+   |    |    |    | child_window(title="隐藏标记", control_type="Text")
+   |    |
+   |    | CheckBox - '隐藏支架'    (L-177, T326, R10, B344)
+   |    | ['CheckBox15', '隐藏支架CheckBox', '隐藏支架', '隐藏支架0', '隐藏支架1']
+   |    | child_window(title="隐藏支架", auto_id="ckbStent", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image59']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '隐藏支架'    (L-159, T326, R-100, B344)
+   |    |    | ['隐藏支架Static', 'Static165', '隐藏支架2', '隐藏支架Static0', '隐藏支架Static1']
+   |    |    | child_window(title="隐藏支架", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '隐藏支架'    (L-156, T326, R-100, B344)
+   |    |    |    | ['隐藏支架Static2', 'Static166', '隐藏支架3']
+   |    |    |    | child_window(title="隐藏支架", control_type="Text")
+   |    |
+   |    | CheckBox - '隐藏Lumen'    (L-177, T356, R10, B374)
+   |    | ['CheckBox16', '隐藏LumenCheckBox', '隐藏Lumen', '隐藏Lumen0', '隐藏Lumen1']
+   |    | child_window(title="隐藏Lumen", auto_id="ckbHideLumen", control_type="CheckBox")
+   |    |    |
+   |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    | ['Image60']
+   |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |
+   |    |    | Static - '隐藏Lumen'    (L-159, T356, R-83, B374)
+   |    |    | ['隐藏LumenStatic', 'Static167', '隐藏Lumen2', '隐藏LumenStatic0', '隐藏LumenStatic1']
+   |    |    | child_window(title="隐藏Lumen", auto_id="lbContent", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '隐藏Lumen'    (L-156, T356, R-83, B374)
+   |    |    |    | ['隐藏LumenStatic2', 'Static168', '隐藏Lumen3']
+   |    |    |    | child_window(title="隐藏Lumen", control_type="Text")
+   |    |
+   |    | Static - '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm'    (L-180, T380, R10, B473)
+   |    | ['面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm', 'Static169', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm0', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm1', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic0', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic1']
+   |    | child_window(title="面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm", auto_id="lumenDes", control_type="Text")
+   |    |    |
+   |    |    | Static - '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm'    (L-174, T386, R-39, B467)
+   |    |    | ['面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm2', 'Static170', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmStatic2']
+   |    |    | child_window(title="面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mm", control_type="Text")
+   |    |
+   |    | Pane - ''    (L-179, T474, R11, B477)
+   |    | ['Pane3', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmPane']
+   |    | child_window(auto_id="scrList", control_type="Pane")
+   |    |    |
+   |    |    | ListBox - ''    (L-179, T474, R11, B477)
+   |    |    | ['ListBox', '面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmListBox', 'ListBox0', 'ListBox1']
+   |    |    | child_window(auto_id="recordList", control_type="List")
+   |    |    |
+   |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    | ['ScrollBar7']
+   |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    | ['ScrollBar8']
+   |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |
+   |    | Static - '扫码分享'    (L0, T0, R0, B0)
+   |    | ['扫码分享', '扫码分享Static', 'Static171']
+   |    | child_window(title="扫码分享", control_type="Text")
+   |    |
+   |    | Image - ''    (L0, T0, R0, B0)
+   |    | ['Image61']
+   |    | child_window(auto_id="imgQrcode", control_type="Image")
+   |
+   | Custom - ''    (L0, T0, R1280, B51)
+   | ['Custom8']
+   |    |
+   |    | Button - ''    (L1236, T28, R1252, B44)
+   |    | ['Button35']
+   |    | child_window(auto_id="imgClose", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1236, T28, R1252, B44)
+   |    |    | ['Image62']
+   |
+   | Button - ''    (L1202, T28, R1220, B46)
+   | ['Button36']
+   |    |
+   |    | Image - ''    (L1202, T28, R1220, B46)
+   |    | ['Image63']
+   |
+   | Pane - ''    (L0, T51, R1280, B1024)
+   | ['Pane4', '患者信息Pane']
+   | child_window(auto_id="frame", control_type="Pane")
+   |    |
+   |    | Custom - ''    (L0, T51, R1280, B126)
+   |    | ['患者信息Custom2', 'Custom9']
+   |    | child_window(auto_id="patientInfo", control_type="Custom")
+   |    |    |
+   |    |    | Image - ''    (L30, T83, R54, B110)
+   |    |    | ['Image64']
+   |    |    |
+   |    |    | Static - '患者信息'    (L54, T85, R138, B108)
+   |    |    | ['患者信息Static3', '患者信息3', 'Static172']
+   |    |    | child_window(title="患者信息", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '患者信息'    (L66, T85, R138, B108)
+   |    |    |    | ['患者信息Static4', '患者信息4', 'Static173']
+   |    |    |    | child_window(title="患者信息", control_type="Text")
+   |    |    |
+   |    |    | Static - 'ID:'    (L180, T86, R216, B107)
+   |    |    | ['ID:Static4', 'Static174', 'ID:4']
+   |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - 'ID:'    (L195, T86, R216, B107)
+   |    |    |    | ['ID:Static5', 'Static175', 'ID:5']
+   |    |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - 'ID:'    (L195, T86, R216, B107)
+   |    |    |    |    | ['ID:Static6', 'Static176', 'ID:6']
+   |    |    |    |    | child_window(title="ID:", control_type="Text")
+   |    |    |
+   |    |    | Static - '1677046'    (L216, T86, R296, B107)
+   |    |    | ['1677046Static2', '16770462', 'Static177']
+   |    |    | child_window(title="1677046", auto_id="id", control_type="Text")
+   |    |    |
+   |    |    | Static - '姓名:'    (L296, T86, R347, B107)
+   |    |    | ['姓名:4', '姓名:Static4', 'Static178']
+   |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '姓名:'    (L311, T86, R347, B107)
+   |    |    |    | ['姓名:5', '姓名:Static5', 'Static179']
+   |    |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '姓名:'    (L311, T86, R347, B107)
+   |    |    |    |    | ['姓名:6', '姓名:Static6', 'Static180']
+   |    |    |    |    | child_window(title="姓名:", control_type="Text")
+   |    |    |
+   |    |    | Static - '李一发'    (L347, T86, R410, B107)
+   |    |    | ['李一发Static2', 'Static181', '李一发2']
+   |    |    | child_window(title="李一发", auto_id="name", control_type="Text")
+   |    |    |
+   |    |    | Static - '性别:'    (L410, T86, R461, B107)
+   |    |    | ['性别:Static4', '性别:4', 'Static182']
+   |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '性别:'    (L425, T86, R461, B107)
+   |    |    |    | ['性别:Static5', '性别:5', 'Static183']
+   |    |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '性别:'    (L425, T86, R461, B107)
+   |    |    |    |    | ['性别:Static6', '性别:6', 'Static184']
+   |    |    |    |    | child_window(title="性别:", control_type="Text")
+   |    |    |
+   |    |    | Static - '男'    (L461, T86, R837, B107)
+   |    |    | ['男Static3', '男3', 'Static185']
+   |    |    | child_window(title="男", auto_id="sex", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '男'    (L461, T86, R477, B107)
+   |    |    |    | ['男Static4', '男4', 'Static186']
+   |    |    |    | child_window(title="男", control_type="Text")
+   |    |
+   |    | Button - ''    (L1170, T71, R1260, B107)
+   |    | ['男Button3', 'Button37', '编辑患者Button2']
+   |    |    |
+   |    |    | Image - ''    (L1184, T79, R1204, B98)
+   |    |    | ['导出Image5', 'Image65']
+   |    |    |
+   |    |    | Static - '导出'    (L1214, T78, R1246, B99)
+   |    |    | ['导出Static3', '导出3', 'Static187']
+   |    |    | child_window(title="导出", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '导出'    (L1214, T78, R1246, B99)
+   |    |    |    | ['导出Static4', '导出4', 'Static188']
+   |    |    |    | child_window(title="导出", control_type="Text")
+   |    |
+   |    | Button - ''    (L0, T0, R0, B0)
+   |    | ['Button38']
+   |    | child_window(auto_id="btnEditCase", control_type="Button")
+   |    |
+   |    | Button - ''    (L1010, T71, R1150, B107)
+   |    | ['Button39', '截屏Button2']
+   |    | child_window(auto_id="btnEditPatient", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L1034, T78, R1053, B99)
+   |    |    | ['截屏Image2', 'Image66']
+   |    |    |
+   |    |    | Static - '编辑患者'    (L1063, T78, R1127, B99)
+   |    |    | ['编辑患者', '编辑患者Static', 'Static189', '编辑患者0', '编辑患者1', '编辑患者Static0', '编辑患者Static1']
+   |    |    | child_window(title="编辑患者", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '编辑患者'    (L1063, T78, R1127, B99)
+   |    |    |    | ['编辑患者2', '编辑患者Static2', 'Static190']
+   |    |    |    | child_window(title="编辑患者", control_type="Text")
+   |    |
+   |    | ListBox - ''    (L0, T126, R254, B930)
+   |    | ['2022-05-11 12:12:38ListBox', 'ListBox2']
+   |    | child_window(auto_id="lstBox_Date", control_type="List")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.StudyTimeList'    (L2, T128, R252, B189)
+   |    |    | ['ListItem25', 'F_2.Models.StudyTimeList', 'F_2.Models.StudyTimeListListItem']
+   |    |    | child_window(title="F_2.Models.StudyTimeList", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Static - '2022-05-11 12:12:38'    (L12, T148, R178, B169)
+   |    |    |    | ['2022-05-11 12:12:38Static', '2022-05-11 12:12:38', 'Static191', '2022-05-11 12:12:38Static0', '2022-05-11 12:12:38Static1', '2022-05-11 12:12:380', '2022-05-11 12:12:381']
+   |    |    |    | child_window(title="2022-05-11 12:12:38", auto_id="labTime", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '2022-05-11 12:12:38'    (L12, T148, R178, B169)
+   |    |    |    |    | ['2022-05-11 12:12:38Static2', '2022-05-11 12:12:382', 'Static192']
+   |    |    |    |    | child_window(title="2022-05-11 12:12:38", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '('    (L188, T148, R193, B169)
+   |    |    |    | ['(', 'Static193', '(Static', '(0', '(1', '(Static0', '(Static1']
+   |    |    |    | child_window(title="(", auto_id="labLeft", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '('    (L188, T148, R193, B169)
+   |    |    |    |    | ['(2', 'Static194', '(Static2']
+   |    |    |    |    | child_window(title="(", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '6'    (L193, T148, R203, B169)
+   |    |    |    | ['6Static', 'Static195', '6', '6Static0', '6Static1', '60', '61']
+   |    |    |    | child_window(title="6", auto_id="labNum", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - '6'    (L193, T148, R203, B169)
+   |    |    |    |    | ['6Static2', 'Static196', '62']
+   |    |    |    |    | child_window(title="6", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - ')'    (L203, T148, R208, B169)
+   |    |    |    | [')Static2', ')', 'Static197', ')0', ')1']
+   |    |    |    | child_window(title=")", auto_id="labRight", control_type="Text")
+   |    |    |    |    |
+   |    |    |    |    | Static - ')'    (L203, T148, R208, B169)
+   |    |    |    |    | [')Static3', ')2', 'Static198']
+   |    |    |    |    | child_window(title=")", control_type="Text")
+   |    |
+   |    | ListBox - ''    (L254, T126, R1280, B930)
+   |    | ['1677046ListBox', 'ListBox3', ')ListBox']
+   |    | child_window(auto_id="lstBox_Case", control_type="List")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L256, T128, R769, B378)
+   |    |    | ['ListItem26', 'F_2.Models.PatImageModel', 'F_2.Models.PatImageModelListItem', 'F_2.Models.PatImageModel0', 'F_2.Models.PatImageModel1', 'F_2.Models.PatImageModelListItem0', 'F_2.Models.PatImageModelListItem1']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L267, T139, R477, B367)
+   |    |    |    | ['Button40', '姓名:Button']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L268, T149, R476, B357)
+   |    |    |    |    | [')Image2', 'Image67']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L708, T168, R748, B198)
+   |    |    |    | ['男CheckBox', 'CheckBox17']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image68']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static199']
+   |    |    |    |
+   |    |    |    | Image - ''    (L487, T173, R503, B189)
+   |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage', 'Image69', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage0', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage1']
+   |    |    |    |
+   |    |    |    | Edit - '）（（+——+=-。，‘；】、！@#￥%……&'    (L561, T255, R711, B295)
+   |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmEdit', 'Edit5']
+   |    |    |    | child_window(title="）（（+——+=-。，‘；】、！@#￥%……&", control_type="Edit")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L694, T255, R711, B295)
+   |    |    |    |    | ['ScrollBar9', '男ScrollBar']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L694, T255, R711, B272)
+   |    |    |    |    |    | ['男Button4', 'Button41']
+   |    |    |    |    |    | child_window(auto_id="PART_LineUpButton", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Button42']
+   |    |    |    |    |    | child_window(auto_id="PageUp", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Button43']
+   |    |    |    |    |    | child_window(auto_id="PageDown", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Thumb - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Thumb10']
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L694, T278, R711, B295)
+   |    |    |    |    |    | ['男Button5', 'Button44']
+   |    |    |    |    |    | child_window(auto_id="PART_LineDownButton", control_type="Button")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar10']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L498, T317, R738, B357)
+   |    |    |    | ['Button45', '查看Button8']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L592, T327, R612, B347)
+   |    |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage2', 'Image70']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L612, T327, R644, B347)
+   |    |    |    |    | ['查看Static', '查看', 'Static200', '查看Static0', '查看Static1', '查看0', '查看1']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L612, T327, R644, B347)
+   |    |    |    |    |    | ['查看Static2', '查看2', 'Static201']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L769, T128, R1282, B378)
+   |    |    | ['ListItem27', 'F_2.Models.PatImageModel2', 'F_2.Models.PatImageModelListItem2']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L780, T139, R990, B367)
+   |    |    |    | ['Button46', '当前帧数: 174Button']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L781, T149, R989, B357)
+   |    |    |    |    | ['当前帧数: 174Image', 'Image71', '当前帧数: 174Image0', '当前帧数: 174Image1']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L1221, T168, R1261, B198)
+   |    |    |    | ['导出CheckBox', 'CheckBox18']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image72']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static202']
+   |    |    |    |
+   |    |    |    | Image - ''    (L1000, T173, R1016, B189)
+   |    |    |    | ['当前帧数: 174Image2', 'Image73']
+   |    |    |    |
+   |    |    |    | Edit - ''    (L1074, T255, R1224, B295)
+   |    |    |    | ['Edit6', '打印Edit']
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar11']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar12']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L1011, T317, R1251, B357)
+   |    |    |    | ['Button47', '查看Button9']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L1105, T327, R1125, B347)
+   |    |    |    |    | ['打印Image', 'Image74']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L1125, T327, R1157, B347)
+   |    |    |    |    | ['查看Static3', '查看3', 'Static203']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L1125, T327, R1157, B347)
+   |    |    |    |    |    | ['查看Static4', '查看4', 'Static204']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L256, T378, R769, B628)
+   |    |    | ['ListItem28', 'F_2.Models.PatImageModel3', 'F_2.Models.PatImageModelListItem3']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L267, T389, R477, B617)
+   |    |    |    | ['Button48', 'Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmButton']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L268, T399, R476, B607)
+   |    |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage3', 'Image75']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L708, T418, R748, B448)
+   |    |    |    | ['CheckBox19', '查看CheckBox', '查看CheckBox0', '查看CheckBox1']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image76']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static205']
+   |    |    |    |
+   |    |    |    | Image - ''    (L487, T423, R503, B439)
+   |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage4', 'Image77']
+   |    |    |    |
+   |    |    |    | Edit - ''    (L561, T505, R711, B545)
+   |    |    |    | ['Edit7', '查看Edit', '查看Edit0', '查看Edit1']
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar13']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar14']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L498, T567, R738, B607)
+   |    |    |    | ['Button49', '查看Button10']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L592, T577, R612, B597)
+   |    |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage5', 'Image78']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L612, T577, R644, B597)
+   |    |    |    |    | ['查看Static5', '查看5', 'Static206']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L612, T577, R644, B597)
+   |    |    |    |    |    | ['查看Static6', '查看6', 'Static207']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L769, T378, R1282, B628)
+   |    |    | ['ListItem29', 'F_2.Models.PatImageModel4', 'F_2.Models.PatImageModelListItem4']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L780, T389, R990, B617)
+   |    |    |    | ['Button50', '查看Button11']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L781, T399, R989, B607)
+   |    |    |    |    | ['查看Image8', 'Image79']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L1221, T418, R1261, B448)
+   |    |    |    | ['CheckBox20', '查看CheckBox2']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image80']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static208']
+   |    |    |    |
+   |    |    |    | Image - ''    (L1000, T423, R1016, B439)
+   |    |    |    | ['当前帧数: 174Image3', 'Image81']
+   |    |    |    |
+   |    |    |    | Edit - ''    (L1074, T505, R1224, B545)
+   |    |    |    | ['Edit8', '查看Edit2']
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar15']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar16']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L1011, T567, R1251, B607)
+   |    |    |    | ['Button51', '查看Button12']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L1105, T577, R1125, B597)
+   |    |    |    |    | ['查看Image9', 'Image82']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L1125, T577, R1157, B597)
+   |    |    |    |    | ['查看Static7', '查看7', 'Static209']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L1125, T577, R1157, B597)
+   |    |    |    |    |    | ['查看Static8', '查看8', 'Static210']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L256, T628, R769, B878)
+   |    |    | ['ListItem30', 'F_2.Models.PatImageModel5', 'F_2.Models.PatImageModelListItem5']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L267, T639, R477, B867)
+   |    |    |    | ['Button52', '10Button']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L268, T649, R476, B857)
+   |    |    |    |    | ['Image83', '10Image']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L708, T668, R748, B698)
+   |    |    |    | ['CheckBox21', '查看CheckBox3']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image84']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static211']
+   |    |    |    |
+   |    |    |    | Image - ''    (L487, T673, R503, B689)
+   |    |    |    | ['Lumen面积:8.73mm² \r\n平均直径:3.33mm \r\n最长:3.46mm \r\n最短:3.22mmImage6', 'Image85']
+   |    |    |    |
+   |    |    |    | Edit - ''    (L561, T755, R711, B795)
+   |    |    |    | ['20Edit', 'Edit9']
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar17']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar18']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L498, T817, R738, B857)
+   |    |    |    | ['Button53', '20Button2']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L592, T827, R612, B847)
+   |    |    |    |    | ['Image86', '20Image3']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L612, T827, R644, B847)
+   |    |    |    |    | ['查看Static9', '查看9', 'Static212']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L612, T827, R644, B847)
+   |    |    |    |    |    | ['查看Static10', '查看10', 'Static213']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |
+   |    |    | ListItem - 'F_2.Models.PatImageModel'    (L769, T628, R1282, B878)
+   |    |    | ['ListItem31', 'F_2.Models.PatImageModel6', 'F_2.Models.PatImageModelListItem6']
+   |    |    | child_window(title="F_2.Models.PatImageModel", control_type="ListItem")
+   |    |    |    |
+   |    |    |    | Button - ''    (L780, T639, R990, B867)
+   |    |    |    | ['Button54', '查看Button13']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L781, T649, R989, B857)
+   |    |    |    |    | ['30Image3', 'Image87']
+   |    |    |    |
+   |    |    |    | CheckBox - ''    (L1221, T668, R1261, B698)
+   |    |    |    | ['CheckBox22', '查看CheckBox4']
+   |    |    |    | child_window(auto_id="checkBox", control_type="CheckBox")
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Image88']
+   |    |    |    |    | child_window(auto_id="CheckedMark", control_type="Image")
+   |    |    |    |    |
+   |    |    |    |    | Static - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Static214']
+   |    |    |    |
+   |    |    |    | Image - ''    (L1000, T673, R1016, B689)
+   |    |    |    | ['查看Image10', 'Image89']
+   |    |    |    |
+   |    |    |    | Edit - '）（（+——+=-。，‘；】、！@#￥%……&'    (L1074, T755, R1224, B795)
+   |    |    |    | ['50Edit', 'Edit10']
+   |    |    |    | child_window(title="）（（+——+=-。，‘；】、！@#￥%……&", control_type="Edit")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L1207, T755, R1224, B795)
+   |    |    |    |    | ['ScrollBar19', 'mmScrollBar']
+   |    |    |    |    | child_window(auto_id="VerticalScrollBar", control_type="ScrollBar")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L1207, T755, R1224, B772)
+   |    |    |    |    |    | ['Button55', '查看Button14']
+   |    |    |    |    |    | child_window(auto_id="PART_LineUpButton", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Button56']
+   |    |    |    |    |    | child_window(auto_id="PageUp", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Button57']
+   |    |    |    |    |    | child_window(auto_id="PageDown", control_type="Button")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Thumb - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Thumb11']
+   |    |    |    |    |    |
+   |    |    |    |    |    | Button - ''    (L1207, T778, R1224, B795)
+   |    |    |    |    |    | ['Button58', 'mmButton']
+   |    |    |    |    |    | child_window(auto_id="PART_LineDownButton", control_type="Button")
+   |    |    |    |    |
+   |    |    |    |    | ScrollBar - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['ScrollBar20']
+   |    |    |    |    | child_window(auto_id="HorizontalScrollBar", control_type="ScrollBar")
+   |    |    |    |
+   |    |    |    | Button - ''    (L1011, T817, R1251, B857)
+   |    |    |    | ['Button59', '40Button2']
+   |    |    |    |    |
+   |    |    |    |    | Image - ''    (L1105, T827, R1125, B847)
+   |    |    |    |    | ['40Image2', 'Image90']
+   |    |    |    |    |
+   |    |    |    |    | Static - '查看'    (L1125, T827, R1157, B847)
+   |    |    |    |    | ['查看Static11', '查看11', 'Static215']
+   |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Static - '查看'    (L1125, T827, R1157, B847)
+   |    |    |    |    |    | ['查看Static12', '查看12', 'Static216']
+   |    |    |    |    |    | child_window(title="查看", control_type="Text")
+   |    |
+   |    | Button - ''    (L40, T958, R143, B996)
+   |    | ['Button60', '校准Button2']
+   |    |    |
+   |    |    | Image - ''    (L59, T965, R79, B989)
+   |    |    | ['Image91', '校准Image']
+   |    |    |
+   |    |    | Static - '删除'    (L79, T966, R125, B988)
+   |    |    | ['删除Static', 'Static217', '删除', '删除Static0', '删除Static1', '删除0', '删除1']
+   |    |    | child_window(title="删除", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '删除'    (L89, T966, R125, B988)
+   |    |    |    | ['删除Static2', 'Static218', '删除2']
+   |    |    |    | child_window(title="删除", control_type="Text")
+   |    |
+   |    | Button - ''    (L163, T958, R309, B996)
+   |    | ['Button61', '0Button', '删除Button']
+   |    | child_window(auto_id="btnAddOCT", control_type="Button")
+   |    |    |
+   |    |    | Image - ''    (L185, T967, R203, B987)
+   |    |    | ['0Image', 'Image92']
+   |    |    |
+   |    |    | Static - '新建OCT'    (L213, T966, R287, B988)
+   |    |    | ['新建OCT3', '新建OCTStatic3', 'Static219']
+   |    |    | child_window(title="新建OCT", control_type="Text")
+   |    |    |    |
+   |    |    |    | Static - '新建OCT'    (L213, T966, R287, B988)
+   |    |    |    | ['新建OCT4', '新建OCTStatic4', 'Static220']
+   |    |    |    | child_window(title="新建OCT", control_type="Text")
+   |    |
+   |    | Button - ''    (L0, T0, R0, B0)
+   |    | ['Button62']
+   |    | child_window(auto_id="btnAddFFR", control_type="Button")
+   |    |
+   |    | Button - ''    (L1120, T955, R1260, B1000)
+   |    | ['Button63', '结束查看Button3']
+   |    | child_window(auto_id="btnHome", control_type="Button")
+   |
+   | Pane - ''    (L0, T0, R0, B0)
+   | ['Pane5']
+   | child_window(auto_id="scanImg", control_type="Pane")
+   |    |
+   |    | Pane - ''    (L0, T0, R0, B0)
+   |    | ['Pane5']
+   |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |
+   |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    | ['Pane5']
+   |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |
+   |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    | ['Pane5']
+   |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |
+   |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    | ['Pane5']
+   |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |
+   |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |    |
+   |    |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |    |    |
+   |    |    |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |    |    |    |
+   |    |    |    |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |    |    |    |    |
+   |    |    |    |    |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+   |    |    |    |    |    |    |    |    |    |    |
+   |    |    |    |    |    |    |    |    |    |    | Pane - ''    (L0, T0, R0, B0)
+   |    |    |    |    |    |    |    |    |    |    | ['Pane5']
+   |    |    |    |    |    |    |    |    |    |    | child_window(auto_id="scanImg", control_type="Pane")
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+C:\Program Files\Python311\Lib\site-packages\pywinauto\uia_element_info.py:360: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+====================== 51 deselected in 82.51s (0:01:22) ======================
+Report successfully generated to .\reports
+
+Process finished with exit code 0

@@ -35,7 +35,7 @@ def connect_application():
             app = application.Application(backend='uia').connect(process=pid)
             time.sleep(2)
         else:
-            app = application.Application(backend='uia').start(r'D:\OCTViewer-VM1\bin\OCTViewer.exe')
+            app = application.Application(backend='uia').start(r'D:\OCTViewer\bin\OCTViewer.exe')
             # app['提示'].wait('exists', timeout=50)
             # ok_btn = app['提示'].child_window(title="确 定", auto_id="OkButton", control_type="Button")
             # if ok_btn.exists():
@@ -162,8 +162,21 @@ def import_testdata(index=0):
         mouse.click(coords=(rect.x, rect.y))
         time.sleep(1)
         item = app['血管内断层成像系统'].child_window(auto_id="cmbFilePath", control_type="ComboBox").wait(wait_for='visible', timeout=50)
-        if index != 0:
-            item.select(1)
+        content = item.texts()
+        deviceType = read_systemInfo()['deviceType']
+        if index == 0:
+            for i in range(len(content)):
+                if r'data\{}'.format(deviceType) in content[i]:
+                    item.select(i)
+                    time.sleep(1)
+                    break
+        elif index == 1:
+            for i in range(len(content)):
+                print(content[i])
+                if r'data\患者列表界面筛选' in content[i]:
+                    item.select(i)
+                    time.sleep(1)
+                    break
         time.sleep(2)
         import_btn2 = app['血管内断层成像系统'].child_window(title="导入", control_type="Button")
         import_btn2.click()
@@ -471,8 +484,8 @@ def send_mail():
         smtp_obj = smtplib.SMTP_SSL('w.cn4e.com', 465)
         smtp_obj.login(sender, 'Gto1BXJkCHO7Asoo')
 
-        # receiver = ['keyong.xu@forssmann.cn']
-        receiver = ['keyong.xu@forssmann.cn', 'desheng.yuan@forssmann.cn', 'xiachi.liu@forssmann.cn', 'yanwen.wang@forssmann.cn']
+        receiver = ['keyong.xu@forssmann.cn']
+        # receiver = ['keyong.xu@forssmann.cn', 'desheng.yuan@forssmann.cn', 'xiachi.liu@forssmann.cn', 'yanwen.wang@forssmann.cn']
         str_receiver = str(receiver).replace("[", '').replace("]", '').replace("'", '')
         # 设置内容
         title = '{}自动化测试结果'.format(dviceType)

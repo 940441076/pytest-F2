@@ -1,6 +1,8 @@
 systemInfo:
   deviceType: 'F2'
   SWV: 'F2-SWV1.3.2.2'
+  MC: 'F2-QMV1.2.2.2'
+  MDL: 'F2-QEV1.2.1.6'
   DSA: True
   K12: True
   length_speed: {'54mm':['18mm/s', '36mm/s'],

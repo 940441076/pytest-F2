@@ -2,19 +2,19 @@
     "reportName": "F2自动化测试报告",
     "testRuns": [],
     "statistic": {
-        "failed": 2,
-        "broken": 17,
+        "failed": 0,
+        "broken": 0,
         "skipped": 0,
-        "passed": 43,
+        "passed": 1,
         "unknown": 0,
-        "total": 62
+        "total": 1
     },
     "time": {
-        "start": 1688713139737,
-        "stop": 1688715124199,
-        "duration": 1984462,
-        "minDuration": 0,
-        "maxDuration": 385467,
-        "sumDuration": 1861655
+        "start": 1690784375570,
+        "stop": 1690784408181,
+        "duration": 32611,
+        "minDuration": 32611,
+        "maxDuration": 32611,
+        "sumDuration": 32611
     }
 }

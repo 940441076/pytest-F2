@@ -458,7 +458,7 @@ def set_report_env_on_html():
     env_info = {'系统': 'WIN10 / V07',
                 '内存': '12G',
                 '显卡': 'GTX1080 / 8G',
-                '软件版本': '{} / {} / {}'.format(systemInfo['SWV'],systemInfo['MC'],systemInfo['MDL']),
+                '软件版本': '{} / {} / {}'.format(systemInfo['SWV'], systemInfo['MC'], systemInfo['MDL']),
                 }
     envs = []
     for k, v in env_info.items():

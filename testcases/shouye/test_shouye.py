@@ -9,7 +9,7 @@ import time
 from common import common_util
 import logging
 log = logging.getLogger(__name__)
-@pytest.mark.skip(1)
+# @pytest.mark.skip(1)
 @pytest.mark.run(order=1)
 @allure.feature('首页界面')
 class Test_ShowYePage:

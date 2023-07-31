@@ -517,3 +517,75 @@ class Test_SystemSettingPage:
             common_util.connect_application()
             common_util.add_text(str(e))
             assert False
+    @pytest.mark.test
+    @allure.title('查看上下位机软件版本')
+    def test_show_engineerMode(self):
+        allure.dynamic.description('查看上下位机软件版本')
+        try:
+            app = common_util.connect_application()
+            common_util.back_systemSettingPage()
+            deviceType_SWV = common_util.read_systemInfo()['SWV']
+            deviceType_MC = common_util.read_systemInfo()['MC']
+            deviceType_MDL = common_util.read_systemInfo()['MDL']
+            with allure.step('检查上位机软件版本'):
+                deviceType_text = app['血管内断层成像系统'].child_window(title="{}".format(deviceType_SWV),
+                                                                         auto_id="txtVersion", control_type="Text")
+                time.sleep(1)
+                common_util.screen_shot('上位机软件版本：{}'.format(deviceType_SWV))
+                assert deviceType_text.exists()
+                time.sleep(1)
+            with allure.step('打开工程师面板'):
+                common_util.open_engineerMode()
+                show_test = app['血管内断层成像系统'].child_window(title="工程师", auto_id="btnOpenEngineer",
+                                                                   control_type="Button")
+                rect = show_test.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(1)
+            with allure.step('查看MC版本：'):
+                MC = app['血管内断层成像系统'].child_window(title="?boardMC", auto_id="btnGetMcBoardInfo",
+                                                            control_type="Button")
+                rect = MC.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(0.5)
+                ok_btn = app['提示'].child_window(title="确 定", auto_id="OkButton", control_type="Button").wait(
+                    wait_for='exists', timeout=10)
+                time.sleep(1)
+                common_util.screen_shot('MC版本：{}'.format(deviceType_MC))
+                content = app['提示']['Pane'].texts()[0]
+                assert deviceType_MC in content
+                ok_btn.click()
+                time.sleep(1)
+            with allure.step('查看MDL版本：'):
+                MC = app['血管内断层成像系统'].child_window(title="?boardMDL", auto_id="btnGetMdlBoardInfo",
+                                                            control_type="Button")
+                rect = MC.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(0.5)
+                ok_btn = app['提示'].child_window(title="确 定", auto_id="OkButton", control_type="Button").wait(
+                    wait_for='exists', timeout=10)
+                time.sleep(1)
+                common_util.screen_shot('MDL版本：{}'.format(deviceType_MDL))
+                content = app['提示']['Pane'].texts()[0]
+                assert deviceType_MDL in content
+                ok_btn.click()
+                time.sleep(1)
+            with allure.step('关闭工程师面板，退出工程师模式'):
+                test_pane = app['血管内断层成像系统'].child_window(title="工程师", control_type="Window")
+                test_pane.close()
+                time.sleep(1)
+                exit_test = app['血管内断层成像系统'].child_window(title="退出工程师模式", auto_id="btnEngineerMode",
+                                                                   control_type="Button")
+                rect = exit_test.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(1)
+                common_util.screen_shot('退出工程师模式')
+            time.sleep(1)
+        except Exception as e:
+            # time.sleep(1)
+            # common_util.screen_shot('异常截图')
+            # time.sleep(1)
+            # common_util.kill_app()
+            # time.sleep(2)
+            # common_util.connect_application()
+            # common_util.add_text(str(e))
+            assert False

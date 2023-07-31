@@ -25,13 +25,13 @@ if __name__ == '__main__':
     common_util.set_report_env_on_html()
     time.sleep(1)
     threading.Thread(target=common_util.open_report, daemon=True).start()
-    time.sleep(6)
-    pyautogui.screenshot('result/result.jpg')
-    time.sleep(1)
-    common_util.kill_app()
-    common_util.kill_allure_serve()
-    common_util.send_mail()
-    common_util.send_dingtalk()
+    # time.sleep(6)
+    # pyautogui.screenshot('result/result.jpg')
+    # time.sleep(1)
+    # common_util.kill_app()
+    # common_util.kill_allure_serve()
+    # common_util.send_mail()
+    # common_util.send_dingtalk()
 
 
 # git clone https://github.com/940441076/pytest-VM1.git

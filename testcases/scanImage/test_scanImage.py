@@ -117,7 +117,7 @@ class Test_ScanImagePage:
                 window_type = app['血管内断层成像系统'].child_window(auto_id="comWindowType",
                                                                      control_type="ComboBox", found_index=0)
                 content_type = window_type.texts()
-                assert content_type == ['常规', '暗黑', '高亮', '锐利', '自定义']
+                assert content_type == ['常规', '暗黑', '自定义']
             with allure.step('显示范围'):
                 field_type = app['血管内断层成像系统'].child_window(auto_id="comField", control_type="ComboBox",
                                                                     found_index=0)

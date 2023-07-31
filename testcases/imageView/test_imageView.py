@@ -28,6 +28,10 @@ class Test_ImageViewPage:
             app = common_util.connect_application()
             common_util.back_imageViewPage()
             with allure.step('点击打印按钮'):
+                play_btn = app['血管内断层成像系统'].child_window(auto_id="playBtn", control_type="Button")
+                rect = play_btn.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(1)
                 print_btn = app['血管内断层成像系统'].child_window(auto_id="btnPrint", control_type="Button").wait('enabled',timeout=20)
                 print_btn.click()
                 time.sleep(1)

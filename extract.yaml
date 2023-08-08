@@ -13,30 +13,13 @@ systemInfo:
 
 
 shouyePage:
-  register:
-    - hosptialID: "1001"
-      patientName: "患者1"
-      age: -1
-      sex: '女'
-      auto_id: "rbtnWoman"
-
-    - hosptialID: "1002"
-      patientName: "患者2"
-      age: 0
-      sex: "女"
-      auto_id: "rbtnWoman"
-
-    - hosptialID: "1003"
-      patientName: "患者3"
-      age: 120
-      sex: "男"
-      auto_id: "rbtnMen"
-
-    - hosptialID: '1004_-Aa~你`!@#$%^&*()=+/（）:;：？?、。，,【】|.\'
-      patientName: '患者4_-Aa~`!@#$%^&*()=+/（）:;：？?、。，,【】|.\'
-      age: 121
-      sex: "男"
-      auto_id: "rbtnMen"
+  # 英文大小写、下划线、横杠和阿拉伯数字。长度不超过20个字符
+  - hosptialID: ['Abc','123','_-','Abc123_-Abc123_-Abc123_-','住院号中文','~`!@#$%^&*()=+/（）:;：？?、。，,【】|.\、']
+  # 中文、英文大小写、数字、间隔点、下划线、横线、括号和空格。长度不超过20个字符
+    patientName: ['姓名','Abc','123','·_-() ','姓名Abc123._-() 16789212345','~`!@#$%^&*()=+/（）:;：？?、。，,【】|.\']
+  # 1-120
+    age: ['1','120','-1','0','121','中文Abc._-() ']
+    sex: [['男','rbtnMen'],['女','rbtnWoman']]
 
 
 settingPage:

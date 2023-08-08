@@ -1085,7 +1085,71 @@ class Test_ImageViewPage:
                 common_util.add_text(str(e))
                 assert False
 
-
+    # @pytest.mark.test
+    @allure.title('设置')
+    def test_setting(self):
+        allure.dynamic.description('设置：回撤类型，图像窗宽窗位风格，图像显示范围，')
+        try:
+            app = common_util.connect_application()
+            common_util.back_imageViewPage()
+            with allure.step('回撤距离和速度'):
+                setting_btn = app['血管内断层成像系统'].child_window(auto_id="btnSetting", control_type="Button",
+                                                                     found_index=0)
+                setting_btn.click_input()
+                pull_len = app['血管内断层成像系统'].child_window(auto_id="comPullback", control_type="ComboBox")
+                pull_len.select(0)
+                content_len = pull_len.texts()
+                length_speed = {}
+                for i in range(len(content_len)):
+                    pull_len.select(i)
+                    time.sleep(0.5)
+                    pull_speed = app['血管内断层成像系统'].child_window(auto_id="comPullBackSped",
+                                                                        control_type="ComboBox")
+                    time.sleep(0.5)
+                    pull_speed.select(0)
+                    length_speed['{}'.format(content_len[i])] = pull_speed.texts()
+                except_length_speed = common_util.read_systemInfo()
+                assert except_length_speed['length_speed'] == length_speed
+            with allure.step('回撤类型'):
+                pull_type = app['血管内断层成像系统'].child_window(auto_id="comTriggers", control_type="ComboBox",
+                                                                   found_index=0)
+                content_type = pull_type.texts()
+                assert content_type == ['自动', '手动']
+                for i in range(len(content_type)):
+                    pull_type.select(i)
+                    time.sleep(1)
+            with allure.step('图像窗宽窗位风格'):
+                window_type = app['血管内断层成像系统'].child_window(auto_id="comWindowType",
+                                                                     control_type="ComboBox", found_index=0)
+                content_type = window_type.texts()
+                assert content_type == ['常规', '暗黑', '高亮', '锐利', '自定义']
+                for i in range(len(content_type)):
+                    window_type.select(i)
+                    time.sleep(1)
+                window_type.select(0)
+                time.sleep(1)
+            with allure.step('显示范围'):
+                field_type = app['血管内断层成像系统'].child_window(auto_id="comField", control_type="ComboBox",
+                                                                    found_index=0)
+                content_type = field_type.texts()
+                except_type = common_util.read_systemInfo()['field_type']
+                assert content_type == except_type
+                for i in range(len(content_type)):
+                    field_type.select(i)
+                    time.sleep(1)
+                field_type.select(1)
+                close_btn = app['血管内断层成像系统'].child_window(auto_id="closeSetting", control_type="Button")
+                close_btn.click()
+                time.sleep(1)
+        except Exception as e:
+            time.sleep(1)
+            common_util.screen_shot('异常截图')
+            time.sleep(1)
+            common_util.kill_app()
+            time.sleep(2)
+            common_util.connect_application()
+            common_util.add_text(str(e))
+            assert False
     # @pytest.mark.test
     @allure.title('结束查看')
     def test_endView(self):

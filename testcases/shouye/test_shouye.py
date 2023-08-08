@@ -9,8 +9,8 @@ import time
 from common import common_util
 import logging
 log = logging.getLogger(__name__)
-# @pytest.mark.skip(1)
-@pytest.mark.run(order=1)
+# @pytest.mark.skip('忽略')
+@pytest.mark.run(order=5)
 @allure.feature('首页界面')
 class Test_ShowYePage:
     # @pytest.mark.test
@@ -708,50 +708,91 @@ class Test_ShowYePage:
             assert False
 
     # @pytest.mark.test
-    @allure.title('注册患者')
-    @pytest.mark.parametrize('caseInfo', common_util.read_yaml('/extract.yaml')['shouyePage']['register'])
+    @allure.title('验证注册字段限制条件')
+    @pytest.mark.parametrize('caseInfo', common_util.read_yaml('/extract.yaml')['shouyePage'])
     def test_register(self, caseInfo):
-        log.info('注册患者')
         allure.dynamic.description(
-            '住院号：包括英文大小写、下划线、横杠和阿拉伯数字\n患者姓名：包括中文、英文大小写、数字、间隔点、下划线、横线、括号和空格')
+            '住院号：包括英文大小写、下划线、横杠和阿拉伯数字\n患者姓名：包括中文、英文大小写、数字、间隔点、下划线、横线、括号和空格\n年龄：1-120')
         try:
             app = common_util.connect_application()
             common_util.back_homePage()
-            with allure.step('输入不同数据,注册患者'):
-                register_btn = app['血管内断层成像系统'].child_window(title="新增患者", auto_id="btnRegist",
-                                                                      control_type="Button")
-                rect = register_btn.rectangle().mid_point()
-                mouse.click(coords=(rect.x, rect.y))
+            hosptialID = caseInfo["hosptialID"]
+            patientName = caseInfo["patientName"]
+            age = caseInfo["age"]
+            hosptialID_real = ['Abc','123','_-','Abc123_-Abc123_-Abc1','','']
+            patientName_real = ['姓名','Abc','123','_-','姓名Abc123_-1678921234','']
+            age_real = ['1','120','1','','120','']
+
+
+            register_btn = app['血管内断层成像系统'].child_window(title="新增患者", auto_id="btnRegist",
+                                                                  control_type="Button")
+            rect = register_btn.rectangle().mid_point()
+            mouse.click(coords=(rect.x, rect.y))
+            time.sleep(1)
+
+            with allure.step('验证住院号限制'):
+                hospitalID__edit = app['血管内断层成像系统'].child_window(auto_id="txtPatientID", control_type="Edit")
+                for i in range(len(hosptialID)):
+                    hospitalID__edit.type_keys(hosptialID[i])
+                    time.sleep(1)
+                    hospitalID__edit = app['血管内断层成像系统'].child_window(auto_id="txtPatientID", control_type="Edit")
+                    common_util.screen_shot('输入：{}，显示：{}'.format(hosptialID[i], hospitalID__edit.texts()[0]))
+                    assert hospitalID__edit.texts()[0] ==hosptialID_real[i]
+                    if hospitalID__edit.texts()[0] == '':
+                        newOCT_btn = app['血管内断层成像系统'].child_window(auto_id="btnAddOCT", control_type="Button")
+                        newOCT_btn.click()
+                        time.sleep(1)
+                        error_tip = app['血管内断层成像系统'].child_window(title="请输入字母、数字、下划线或横杠", auto_id="txtPatientIDTip",control_type="Text")
+                        assert error_tip.exists()
+                    keyboard.send_keys('^a')
+                    time.sleep(0.5)
+                    keyboard.send_keys('{VK_BACK}')
+            with allure.step('验证姓名限制:需要手动输入间隔点和括号，程序无法模拟'):
+                name_edit = app['血管内断层成像系统'].child_window(auto_id="txtName", control_type="Edit")
+                for i in range(len(patientName)):
+                    name_edit.type_keys(patientName[i])
+                    time.sleep(1)
+                    name_edit = app['血管内断层成像系统'].child_window(auto_id="txtName", control_type="Edit")
+                    common_util.screen_shot('输入：{}，显示：{}'.format(patientName[i],name_edit.texts()[0]))
+                    assert name_edit.texts()[0] == patientName_real[i]
+                    if name_edit.texts()[0] == '':
+                        newOCT_btn = app['血管内断层成像系统'].child_window(auto_id="btnAddOCT", control_type="Button")
+                        newOCT_btn.click()
+                        time.sleep(1)
+                        error_tip = app['血管内断层成像系统'].child_window(title="请输入病人姓名", auto_id="txtNameTip",control_type="Text")
+                        assert error_tip.exists()
+                    keyboard.send_keys('^a')
+                    time.sleep(0.5)
+                    keyboard.send_keys('{VK_BACK}')
+            with allure.step('验证年龄限制'):
+                age_edit = app['血管内断层成像系统'].child_window(auto_id="txtOld", control_type="Edit")
+                for i in range(len(age)):
+                    age_edit.type_keys(age[i])
+                    time.sleep(1)
+                    age_edit = app['血管内断层成像系统'].child_window(auto_id="txtOld", control_type="Edit")
+                    common_util.screen_shot('输入：{}，显示：{}'.format(age[i],age_edit.texts()[0]))
+                    assert age_edit.texts()[0] == age_real[i]
+                    keyboard.send_keys('^a')
+                    time.sleep(0.5)
+                    keyboard.send_keys('{VK_BACK}')
+            with allure.step('验证年龄不输入也可以注册成功'):
+                hospitalID__edit = app['血管内断层成像系统'].child_window(auto_id="txtPatientID",
+                                                                          control_type="Edit")
+                hospitalID__edit.type_keys('testID-age')
                 time.sleep(1)
-                hospitalId = app['血管内断层成像系统'].child_window(auto_id="txtPatientID", control_type="Edit")
-                hospitalId.type_keys(caseInfo["hosptialID"])
-                time.sleep(0.5)
-                name = app['血管内断层成像系统'].child_window(auto_id="txtName", control_type="Edit")
-                name.type_keys(caseInfo["patientName"])
-                time.sleep(0.5)
-                age = app['血管内断层成像系统'].child_window(auto_id="txtOld", control_type="Edit")
-                age.type_keys(caseInfo["age"])
-                time.sleep(0.5)
-                sex_btn = app['血管内断层成像系统'].child_window(title="{}".format(caseInfo["sex"]),
-                                                                 auto_id="{}".format(caseInfo["auto_id"]),
-                                                                 control_type="RadioButton")
-                sex_btn.click()
-                time.sleep(0.5)
-                new_btn = app['血管内断层成像系统'].child_window(auto_id="btnAddOCT", control_type="Button")
-                new_btn.click()
+                name_edit = app['血管内断层成像系统'].child_window(auto_id="txtName", control_type="Edit")
+                name_edit.type_keys('姓名-age')
+                time.sleep(1)
+                common_util.screen_shot('不输入年龄')
+                newOCT_btn = app['血管内断层成像系统'].child_window(auto_id="btnAddOCT", control_type="Button")
+                newOCT_btn.click()
                 time.sleep(3)
-                common_util.screen_shot('注册完成跳转界面')
-                info_hospitalId = app['血管内断层成像系统']['Static6']
-                info_name = app['血管内断层成像系统']['Static10']
-                info_sex = app['血管内断层成像系统']['Static14']
-                hospitalId = [caseInfo["hosptialID"].split('~')[0]]
-                name = [caseInfo["patientName"].split('~')[0]]
-                sex = [caseInfo["sex"]]
-                assert info_hospitalId.texts() == hospitalId
-                assert info_name.texts() == name
-                assert info_sex.texts() == sex
-                time.sleep(2)
-                log.info('注册患者完成！')
+                patientImage_btn = app['血管内断层成像系统'].child_window(auto_id="btnPatientImage",
+                                                                          control_type="Button")
+                time.sleep(1)
+                common_util.screen_shot('跳转到扫描界面')
+                assert patientImage_btn.exists()
+
         except Exception as e:
             time.sleep(1)
             common_util.screen_shot('异常截图')
@@ -762,7 +803,55 @@ class Test_ShowYePage:
             common_util.add_text(str(e))
             assert False
 
-    @allure.title('注册患者，住院号已存在')
+    # @pytest.mark.test
+    @allure.title('注册患者：住院号不存在')
+    def test_register_noExisted(self):
+        log.info('注册患者：住院号不存在')
+        allure.dynamic.description('注册患者：住院号不存在，可以跳转到扫描界面')
+        try:
+            app = common_util.connect_application()
+            common_util.back_homePage()
+            with allure.step('输入正确字段，可以注册成功'):
+                regist_btn = app['血管内断层成像系统'].child_window(title="新增患者", auto_id="btnRegist",
+                                                                    control_type="Button")
+                rect = regist_btn.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                time.sleep(1)
+                hospitalId = app['血管内断层成像系统'].child_window(auto_id="txtPatientID", control_type="Edit")
+                hospitalId.type_keys('testID')
+                time.sleep(0.5)
+                name = app['血管内断层成像系统'].child_window(auto_id="txtName", control_type="Edit")
+                name.type_keys('testName')
+                time.sleep(0.5)
+                age = app['血管内断层成像系统'].child_window(auto_id="txtOld", control_type="Edit")
+                age.type_keys(1)
+                time.sleep(0.5)
+                sex_btn = app['血管内断层成像系统'].child_window(title="女",auto_id="rbtnWoman",control_type="RadioButton")
+                sex_btn.click()
+                time.sleep(0.5)
+                new_btn = app['血管内断层成像系统'].child_window(auto_id="btnAddOCT", control_type="Button")
+                new_btn.click()
+                time.sleep(3)
+                common_util.screen_shot('注册完成跳转界面')
+                info_hospitalId = app['血管内断层成像系统']['Static6']
+                info_name = app['血管内断层成像系统']['Static10']
+                info_sex = app['血管内断层成像系统']['Static14']
+                assert info_hospitalId.texts() == ['testID']
+                assert info_name.texts() == ['testName']
+                assert info_sex.texts() == ['女']
+                time.sleep(2)
+        except Exception as e:
+            time.sleep(1)
+            common_util.screen_shot('异常截图')
+            time.sleep(1)
+            common_util.kill_app()
+            time.sleep(2)
+            common_util.connect_application()
+            common_util.add_text(str(e))
+            assert False
+
+
+    @allure.title('注册患者：住院号已存在')
     def test_register_existed(self):
         log.info('注册患者，住院号已存在')
         allure.dynamic.description('注册患者，住院号已存在，可以跳转到该患者图像界面')
@@ -857,6 +946,8 @@ class Test_ShowYePage:
                 select_btn.click()
                 time.sleep(2)
                 patient_list = app['血管内断层成像系统']['ListView']
+                time.sleep(1)
+                common_util.screen_shot('患者列表为空')
                 assert len(patient_list.texts()) ==0
                 home_btn = app['血管内断层成像系统'].child_window(auto_id="btnHome", control_type="Button")
                 home_btn.click()
@@ -868,6 +959,8 @@ class Test_ShowYePage:
                 select_btn.click()
                 time.sleep(2)
                 patient_list = app['血管内断层成像系统']['ListView']
+                time.sleep(1)
+                common_util.screen_shot('患者列表为1')
                 assert len(patient_list.texts()) ==1
                 home_btn = app['血管内断层成像系统'].child_window(auto_id="btnHome", control_type="Button")
                 home_btn.click()

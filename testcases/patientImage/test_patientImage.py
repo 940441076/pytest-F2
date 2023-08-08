@@ -170,6 +170,46 @@ class Test_PatientImagePage:
             assert False
 
     # @pytest.mark.test
+    @allure.title('图像备注')
+    def test_notes(self):
+        allure.dynamic.description("图像备注：特殊符号")
+        try:
+            app = common_util.connect_application()
+            common_util.back_patientImgPage()
+            with allure.step('选择是'):
+                note_edit = app['血管内断层成像系统']['Edit']
+                rect = note_edit.rectangle().mid_point()
+                mouse.click(coords=(rect.x, rect.y))
+                str_list = ['\\', '/', ':', '*', '?', '"', '<', '>', '|', ]
+                for i in range(len(str_list)):
+                    keyboard.send_keys(str_list[i])
+                    tip_pane = app['提示']['pane']
+                    content = tip_pane.texts()[0]
+                    assert '不能包含以下字符：\n\\/:*?"<>|' == content
+                    ok_btn = app['提示'].child_window(title="确 定", auto_id="OkButton", control_type="Button")
+                    ok_btn.click()
+                    time.sleep(1)
+                keyboard.send_keys("备注abc123；】、》！@#￥")
+                time.sleep(1)
+                home_btn = app['血管内断层成像系统'].child_window(auto_id="btnHome", control_type="Button")
+                home_btn.click()
+                common_util.back_patientImgPage()
+                note_edit1 = app['血管内断层成像系统'].child_window(title="备注abc123；】、》！@#￥", control_type="Edit")
+                time.sleep(2)
+                common_util.screen_shot('备注信息')
+                assert note_edit1.exists()
+                time.sleep(1)
+        except Exception as e:
+            time.sleep(1)
+            common_util.screen_shot('异常截图')
+            time.sleep(1)
+            common_util.kill_app()
+            time.sleep(2)
+            common_util.connect_application()
+            common_util.add_text(str(e))
+            assert False
+
+    # @pytest.mark.test
     @allure.title('导出')
     def test_import(self):
         allure.dynamic.description('导出')
